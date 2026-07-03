@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 680" fill="none">
+  <rect width="480" height="680" fill="#2d4a3e"/>
+  <rect y="500" width="480" height="180" fill="#1a2f28"/>
+  <circle cx="90" cy="130" r="55" fill="#c0392b" opacity="0.5"/>
+  <rect x="170" y="180" width="140" height="100" rx="6" fill="#c0392b" opacity="0.85"/>
+  <polygon points="240,150 310,180 170,180" fill="#8b2914"/>
+  <ellipse cx="350" cy="420" rx="80" ry="50" fill="#27ae60" opacity="0.35"/>
+  <text x="40" y="80" fill="#fff" font-size="14" font-weight="800" font-family="Inter,sans-serif" opacity="0.85">DREAM RESORT � JAPAN INBOUND</text>
+  <text x="40" y="560" fill="#fff" font-size="42" font-weight="800" font-family="Inter,sans-serif">KYOTO</text>
+  <text x="40" y="600" fill="rgba(255,255,255,0.85)" font-size="18" font-family="Inter,sans-serif">3 Days � Tradition / Premium</text>
+  <text x="40" y="630" fill="rgba(255,255,255,0.65)" font-size="13" font-family="Inter,sans-serif">Model Course Poster</text>
+</svg>

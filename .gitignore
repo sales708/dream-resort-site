@@ -1,0 +1,6 @@
+dist/
+ALL-SOURCE-CODE.txt
+deploy.config.json
+.DS_Store
+Thumbs.db
+*.log

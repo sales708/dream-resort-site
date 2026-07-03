@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+  command = "powershell -ExecutionPolicy Bypass -File build-all.ps1"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/expo"
+  to = "/expo/index.html"
+  status = 200

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 170" fill="none">
+  <rect width="280" height="170" fill="#1c3d5a"/>
+  <rect x="0" y="100" width="280" height="70" fill="#fff" opacity="0.9"/>
+  <path d="M0 100 L60 80 L120 95 L180 75 L240 90 L280 85 L280 100 Z" fill="#ecf0f1"/>
+  <circle cx="200" cy="50" r="20" fill="#fff" opacity="0.8"/>
+  <path d="M30 130 Q80 120 130 135 T230 125" stroke="#3498db" stroke-width="3" fill="none" opacity="0.6"/>
+  <text x="20" y="155" fill="#132238" font-size="18" font-weight="800" font-family="Inter, sans-serif">Hokkaido</text>
+</svg>

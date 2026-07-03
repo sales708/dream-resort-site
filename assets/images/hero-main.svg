@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none">
+  <rect width="560" height="360" fill="#eef5ff"/>
+  <rect x="0" y="200" width="560" height="160" fill="#0b4f9c" opacity="0.15"/>
+  <circle cx="420" cy="80" r="48" fill="#2f80ed" opacity="0.25"/>
+  <path d="M0 280 L140 220 L280 260 L420 180 L560 240 L560 360 L0 360 Z" fill="#0b4f9c" opacity="0.35"/>
+  <rect x="180" y="140" width="24" height="120" fill="#083b74" opacity="0.5"/>
+  <rect x="220" y="100" width="20" height="160" fill="#0b4f9c" opacity="0.6"/>
+  <rect x="260" y="120" width="28" height="140" fill="#2f80ed" opacity="0.55"/>
+  <rect x="310" y="90" width="22" height="170" fill="#083b74" opacity="0.5"/>
+  <rect x="350" y="110" width="26" height="150" fill="#0b4f9c" opacity="0.55"/>
+  <text x="280" y="320" text-anchor="middle" fill="#64748b" font-size="14" font-family="Inter, sans-serif">Tokyo Skyline � Hero Placeholder</text>
+</svg>

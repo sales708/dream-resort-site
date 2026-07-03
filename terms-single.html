@@ -1,0 +1,2608 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>旅行業約款｜ドリームリゾート開発株式会社</title>
+  <meta name="description" content="ドリームリゾート開発株式会社の旅行業約款（募集型企画旅行）。" />
+  <link rel="icon" href="assets/images/logo-icon.png" type="image/png" />
+  <style>
+:root {
+  --bg: #f7faff;
+  --surface: #ffffff;
+  --surface-soft: #eef5ff;
+  --primary: #0b4f9c;
+  --primary-dark: #083b74;
+  --accent: #2f80ed;
+  --text: #132238;
+  --muted: #64748b;
+  --line: #dbe7f5;
+  --shadow: 0 16px 40px rgba(15, 49, 92, .08);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --max: 1180px;
+  --header: 92px;
+  --logo-height: calc(var(--header) - 14px);
+  --hero-photo: url("../images/hero/slide-fuji.png");
+  font-family: Inter, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+.container {
+  width: min(var(--max), calc(100% - 40px));
+  margin: 0 auto;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header);
+  background: rgba(247, 250, 255, .94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(219, 231, 245, .85);
+}
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: 6px 0;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+.logo-img {
+  width: auto;
+  height: var(--logo-height);
+  max-width: min(360px, 62vw);
+  border-radius: 0;
+  object-fit: contain;
+  object-position: left center;
+  flex-shrink: 0;
+  display: block;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-links a {
+  padding: 10px 12px;
+  border-radius: 999px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--surface-soft);
+  color: var(--primary);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lang {
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+}
+.lang button {
+  border: 0;
+  background: transparent;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+.lang button.active {
+  color: #fff;
+  background: var(--primary);
+}
+.menu-btn {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .2s ease;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(11,79,156,.2);
+}
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+.btn-primary:disabled {
+  opacity: .65;
+  cursor: not-allowed;
+  transform: none;
+}
+.btn-secondary {
+  background: #fff;
+  color: var(--primary);
+  border-color: var(--line);
+}
+.btn-secondary:hover { border-color: var(--accent); transform: translateY(-1px); }
+section { padding: 92px 0; }
+.news-section {
+  background: #fbfdff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.news-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px rgba(15, 49, 92, .1);
+}
+.news-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.news-tag {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.news-tag-expo {
+  background: #eef5ff;
+  color: var(--primary);
+}
+.news-tag-update {
+  background: #ecfdf5;
+  color: #047857;
+}
+.news-tag-mice {
+  background: #fff7ed;
+  color: #c2410c;
+}
+.news-date {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 700;
+}
+.news-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.news-card p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.65;
+  flex: 1;
+}
+.news-link {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--primary);
+}
+.news-link:hover {
+  color: var(--accent);
+}
+.hero {
+  position: relative;
+  padding: 72px 0 36px;
+  color: #fff;
+  background: none;
+  overflow: hidden;
+}
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 1.4s ease, transform 9s ease;
+  will-change: opacity, transform;
+}
+.hero-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(115deg, rgba(8, 43, 83, 0.82) 0%, rgba(11, 79, 156, 0.55) 42%, rgba(247, 250, 255, 0.88) 100%);
+  pointer-events: none;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(circle at 78% 22%, rgba(255, 255, 255, 0.12), transparent 42%);
+  pointer-events: none;
+}
+.hero .container { position: relative; z-index: 2; }
+.hero .eyebrow {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.hero h1 { color: #fff; text-shadow: 0 2px 24px rgba(8, 43, 83, 0.35); }
+.hero .lead { color: rgba(255, 255, 255, 0.92); max-width: none; }
+.hero-left .home-highlight-map .hero-markets-title {
+  color: var(--primary-dark);
+}
+.hero-note { color: rgba(255, 255, 255, 0.78); }
+.hero .btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+}
+.hero .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: #fff;
+}
+.hero-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  color: var(--text);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+.hero-card h3,
+.hero-card p { color: var(--text); }
+.hero-media {
+  margin: -8px -8px 18px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #0b2a4a;
+  aspect-ratio: 16 / 10;
+  box-shadow: 0 20px 40px rgba(8, 43, 83, 0.18);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 32px 48px;
+  align-items: stretch;
+}
+.hero-left,
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  height: 100%;
+}
+.hero-left .home-highlight-map,
+.hero-right .home-highlight-markets {
+  margin-top: auto;
+}
+.home-highlight-map,
+.home-highlight-markets {
+  align-self: stretch;
+}
+.home-highlight-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: 0 12px 28px rgba(8, 43, 83, 0.14);
+  backdrop-filter: blur(10px);
+}
+.home-highlight-map {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-highlight-map .hero-markets-map {
+  flex: 1;
+  margin: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 8px 10px;
+}
+.home-highlight-map .hero-markets-map img {
+  width: 100%;
+  height: 100%;
+  max-height: 240px;
+  min-height: 210px;
+  object-fit: contain;
+  object-position: center;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+h1, h2, h3 { line-height: 1.18; margin: 0; letter-spacing: -.03em; }
+h1 { font-size: clamp(40px, 5.2vw, 72px); max-width: 760px; }
+h2 { font-size: clamp(30px, 3.4vw, 46px); }
+h3 { font-size: 21px; }
+.lead {
+  margin: 24px 0 0;
+  font-size: clamp(17px, 2vw, 20px);
+  color: #475569;
+  max-width: 680px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.hero-note {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+}
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+.metric {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfdff;
+}
+.metric strong {
+  display: block;
+  color: var(--primary);
+  font-size: 26px;
+  line-height: 1.1;
+}
+.metric span { color: var(--muted); font-size: 13px; }
+.metric-wide {
+  grid-column: 1 / -1;
+}
+.home-highlight-markets .hero-markets-columns {
+  margin-bottom: 0;
+  gap: 10px;
+}
+.hero-markets-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--primary-dark);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: baseline;
+}
+.hero-markets-title-en,
+.hero-markets-subtitle-en {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.hero-markets-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 0;
+}
+.hero-markets-col + .hero-markets-col {
+  border-left: 1px solid var(--line);
+  padding-left: 10px;
+}
+.hero-markets-subtitle {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.hero-markets-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.hero-markets-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+}
+.hero-markets-flag {
+  font-size: 13px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.hero-markets-map {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f3f6fa;
+}
+.hero-markets-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 36px;
+}
+.section-head p {
+  max-width: 540px;
+  margin: 0;
+  color: var(--muted);
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15,49,92,.05);
+}
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: var(--surface-soft);
+  color: var(--primary);
+  margin-bottom: 18px;
+}
+.card p { color: var(--muted); margin: 12px 0 0; }
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.tag {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--primary);
+  background: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+.about {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.split {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+.panel {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px;
+}
+.about-expo {
+  margin-top: 48px;
+}
+.about-expo-head {
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+.about-expo-head h3 {
+  font-size: clamp(22px, 2.4vw, 28px);
+  margin: 0 0 10px;
+}
+.about-expo-head p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.65;
+}
+.about-expo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.about-expo-card {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.about-expo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.about-expo-card figcaption {
+  padding: 14px 16px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.5;
+  background: #fbfdff;
+  border-top: 1px solid var(--line);
+}
+.about-expo-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.about-expo-card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px rgba(15, 49, 92, .12);
+}
+.about-expo-body {
+  padding: 14px 16px 16px;
+  background: #fbfdff;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+.about-expo-body p,
+.about-expo-body h4,
+.about-expo-body h2 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text);
+}
+.expo-list-page .expo-list-head {
+  margin-bottom: 28px;
+}
+.expo-list-page .expo-list-head h1 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 36px);
+}
+.expo-list-page .about-expo-grid {
+  margin-top: 8px;
+}
+.expo-cover {
+  position: relative;
+  min-height: clamp(360px, 52vw, 520px);
+  color: #fff;
+  overflow: hidden;
+}
+.expo-cover-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.expo-cover-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 1.2s ease, transform 8s ease;
+  will-change: opacity, transform;
+}
+.expo-cover-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.expo-cover-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.expo-cover-slide-upcoming {
+  background: linear-gradient(135deg, #0b4f9c 0%, #2f80ed 55%, #7eb8ff 100%);
+}
+.expo-cover-slide-nagano {
+  background: linear-gradient(135deg, #0f3a5c 0%, #1d6b8a 45%, #5ba4c9 100%);
+}
+.expo-cover-slide-jnto {
+  background: linear-gradient(135deg, #083b74 0%, #0b4f9c 50%, #4d9aff 100%);
+}
+.expo-cover-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(115deg, rgba(8, 43, 83, 0.88) 0%, rgba(11, 79, 156, 0.62) 45%, rgba(8, 43, 83, 0.35) 100%);
+  pointer-events: none;
+}
+.expo-cover-inner {
+  position: relative;
+  z-index: 2;
+  min-height: clamp(360px, 52vw, 520px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 0 32px;
+}
+.expo-cover-back {
+  align-self: flex-start;
+  margin-bottom: auto;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.expo-cover-back:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+.expo-cover-captions {
+  position: relative;
+  min-height: 180px;
+  max-width: 720px;
+}
+.expo-cover-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .6s ease, transform .6s ease;
+  pointer-events: none;
+}
+.expo-cover-caption.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.expo-cover-caption .about-expo-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.expo-cover-eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+.expo-cover-caption h1 {
+  margin: 0;
+  font-size: clamp(24px, 3.2vw, 38px);
+  line-height: 1.25;
+  max-width: 18ch;
+}
+.expo-cover-date {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+.expo-cover-caption .btn-primary {
+  margin-top: 6px;
+}
+.expo-cover-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 22px;
+}
+.expo-cover-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, width .2s ease;
+}
+.expo-cover-dot.is-active {
+  width: 28px;
+  background: #fff;
+}
+.expo-cover-dot:hover {
+  transform: scale(1.08);
+}
+.expo-list-section {
+  padding: 56px 0 92px;
+  background: var(--bg);
+}
+.expo-list-section .expo-list-head h2 {
+  margin: 0;
+  font-size: clamp(24px, 2.8vw, 32px);
+}
+.about-expo-more {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.about-expo-media {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px;
+  background: linear-gradient(135deg, #e8f2ff 0%, #f5f9ff 100%);
+}
+.about-expo-media-upcoming time {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+.about-expo-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.expo-detail-page .legal-content {
+  max-width: 760px;
+}
+.expo-detail-date {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 16px;
+}
+.expo-detail-page .news-tag {
+  margin-bottom: 14px;
+}
+.expo-detail-photo {
+  margin: 0 0 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.expo-detail-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: #334155;
+}
+.check {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.tab-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.tab-btn.active {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.destination-card-upgrade::after {
+  content: "UPGRADE";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c9a227, #f0d060);
+  color: #1a2744;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+.dest-poster-badge-upgrade {
+  background: linear-gradient(135deg, #a8831a, #d4af37);
+}
+.destination {
+  position: relative;
+  min-height: 220px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  color: #fff;
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.destination::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(8, 43, 83, 0.15) 0%, rgba(8, 43, 83, 0.55) 55%, rgba(8, 43, 83, 0.88) 100%);
+  pointer-events: none;
+}
+.destination img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.destination-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+.destination-content h3 {
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+.destination-content span {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  display: block;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+a.destination-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+  cursor: pointer;
+}
+a.destination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+a.destination-card:hover img { transform: scale(1.04); }
+.destination-card img { transition: transform .35s ease; }
+.dest-cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.2);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 1 !important;
+  text-shadow: none;
+}
+.dest-page-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  overflow: hidden;
+  background: var(--primary);
+}
+.dest-page-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dest-page-hero .container {
+  position: relative;
+  z-index: 1;
+  padding: 72px 0 48px;
+}
+.dest-page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8,43,83,.25), rgba(8,43,83,.82));
+}
+.dest-page-hero h1 { font-size: clamp(36px, 4vw, 56px); max-width: 720px; }
+.dest-page-hero p { max-width: 640px; margin-top: 14px; opacity: .9; font-size: 18px; }
+.dest-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.15);
+  font-size: 13px;
+  font-weight: 800;
+}
+.dest-back:hover { background: rgba(255,255,255,.25); }
+.dest-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.dest-meta span {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  font-size: 13px;
+  font-weight: 800;
+}
+.dest-detail { padding: 72px 0; }
+.dest-layout {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 28px;
+  align-items: start;
+}
+.dest-side {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 26px;
+}
+.dest-side h3 { margin-bottom: 14px; }
+.dest-highlights {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dest-highlights li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: #334155;
+  font-size: 14px;
+}
+.dest-highlights li::before {
+  content: "•";
+  color: var(--primary);
+  font-weight: 800;
+}
+.dest-actions { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+.dest-poster-section { padding: 72px 0; }
+.dest-poster-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.dest-poster-frame {
+  margin: 0;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+}
+.dest-poster-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #0b2a4a;
+}
+.dest-poster-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(11,79,156,.88);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+.dest-poster-copy h2 {
+  font-size: clamp(28px, 3vw, 38px);
+  margin-top: 8px;
+}
+.dest-itinerary-section {
+  padding: 0 0 92px;
+}
+.itinerary-cards {
+  display: grid;
+  gap: 18px;
+}
+.itinerary-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15,49,92,.05);
+}
+.itinerary-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.itinerary-day-label {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.itinerary-card-head h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.itinerary-schedule {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.itinerary-schedule li {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--surface-soft);
+  color: #334155;
+  font-size: 14px;
+}
+.itinerary-schedule time {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 13px;
+}
+.day-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.day-tag {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+.dest-pricing-section {
+  padding: 0 0 72px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.pricing-note {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+.pricing-cell {
+  text-align: center;
+  padding: 18px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+.pricing-cell.featured {
+  border-color: var(--accent);
+  background: #eef5ff;
+  box-shadow: 0 0 0 3px rgba(47,128,237,.12);
+}
+.pricing-pax {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+.pricing-label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 8px;
+}
+.pricing-price {
+  display: block;
+  font-size: 15px;
+  color: #132238;
+}
+.dest-includes-block {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.dest-includes-block h3,
+.dest-spots-block h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.dest-includes-block ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #334155;
+  display: grid;
+  gap: 8px;
+}
+.dest-spots-block {
+  margin-top: 20px;
+}
+.contact-wrap {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 24px;
+  align-items: start;
+}
+form {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+label {
+  display: grid;
+  gap: 7px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 800;
+}
+input, select, textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 13px;
+  color: var(--text);
+  background: #fbfdff;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(47,128,237,.12);
+}
+textarea { min-height: 130px; resize: vertical; }
+.full { grid-column: 1 / -1; }
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.form-status {
+  margin: 0;
+  min-height: 1.4em;
+  font-size: 14px;
+  font-weight: 700;
+}
+.form-status.success { color: #047857; }
+.form-status.error { color: #b91c1c; }
+footer {
+  padding: 42px 0;
+  background: #082b53;
+  color: rgba(255,255,255,.78);
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer-brand {
+  display: grid;
+  gap: 6px;
+}
+.footer-brand strong { color: #fff; display: block; }
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+.footer-nav a {
+  color: rgba(255,255,255,.88);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-nav a:hover { color: #fff; }
+.footer-nav a[aria-current="page"] {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,.12);
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+.legal-main {
+  padding: 48px 0 92px;
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+}
+.legal-back:hover { background: #e3efff; }
+.legal-main h1 {
+  font-size: clamp(30px, 3.4vw, 42px);
+  margin-bottom: 28px;
+}
+.legal-content {
+  max-width: 820px;
+  color: #334155;
+}
+.legal-content h2 {
+  font-size: 22px;
+  margin: 36px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+}
+.legal-content h3 {
+  font-size: 17px;
+  margin: 22px 0 10px;
+  color: var(--primary);
+}
+.legal-content p { margin: 0 0 14px; }
+.legal-content ol {
+  margin: 0 0 14px;
+  padding-left: 1.4em;
+}
+.legal-content li { margin-bottom: 8px; }
+.legal-signoff {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  line-height: 1.9;
+}
+.legal-note {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+}
+.info-table {
+  margin: 0 0 24px;
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.info-table > div {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  border-bottom: 1px solid var(--line);
+}
+.info-table > div:last-child { border-bottom: 0; }
+.info-table dt {
+  margin: 0;
+  padding: 14px 16px;
+  background: var(--surface-soft);
+  font-weight: 800;
+  color: var(--primary);
+}
+.info-table dd {
+  margin: 0;
+  padding: 14px 16px;
+  background: #fff;
+}
+.contact-card {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+.contact-card h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  border: 0;
+  padding: 0;
+}
+.legal-actions { margin-top: 28px; }
+@media (max-width: 620px) {
+  .info-table > div { grid-template-columns: 1fr; }
+  .info-table dt { border-bottom: 1px solid var(--line); }
+  .footer-nav { flex-direction: column; gap: 10px; }
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 16px;
+}
+.footer-links a {
+  color: rgba(255,255,255,.88);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-links a:hover { color: #fff; }
+.footer-social {
+  margin-top: 14px;
+}
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,.88);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer-social-link:hover { color: #fff; }
+.footer-social-icon { flex-shrink: 0; }
+.legal-page {
+  padding: 48px 0 92px;
+  background:
+    linear-gradient(180deg, rgba(247, 250, 255, 0.97) 0%, #fff 28%),
+    var(--hero-photo) center top / cover no-repeat fixed;
+}
+.legal-content {
+  max-width: 820px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 36px 40px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+}
+.legal-back:hover { background: var(--line); }
+.legal-content h1 {
+  font-size: clamp(32px, 4vw, 44px);
+  margin-bottom: 28px;
+}
+.legal-section {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.legal-section:last-of-type { border-bottom: 0; }
+.legal-section h2 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: var(--primary);
+}
+.legal-section h3 {
+  font-size: 17px;
+  margin: 18px 0 10px;
+}
+.legal-section p,
+.legal-section li {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.legal-section ol {
+  margin: 10px 0;
+  padding-left: 1.4em;
+}
+.legal-section ol li { margin-bottom: 8px; }
+.legal-signoff {
+  margin-top: 36px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+  line-height: 1.9;
+}
+.info-table {
+  margin: 0;
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.info-table > div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border-bottom: 1px solid var(--line);
+}
+.info-table > div:last-child { border-bottom: 0; }
+.info-table dt {
+  margin: 0;
+  padding: 16px 18px;
+  background: var(--surface-soft);
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 14px;
+}
+.info-table dd {
+  margin: 0;
+  padding: 16px 18px;
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.info-table dd p { margin: 0 0 12px; }
+.info-table dd p:last-child { margin-bottom: 0; }
+.info-table a { color: var(--primary); text-decoration: underline; }
+.contact-card {
+  margin-top: 24px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+.contact-card h2 {
+  font-size: 20px;
+  margin: 0 0 18px;
+}
+.legal-actions { margin-top: 28px; }
+@media (max-width: 620px) {
+  .info-table > div { grid-template-columns: 1fr; }
+  .info-table dt { border-bottom: 1px solid var(--line); }
+}
+.back-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--primary);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s;
+}
+.back-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@media (max-width: 960px) {
+  .hero-grid, .split, .contact-wrap, .dest-layout, .dest-poster-grid {
+    grid-template-columns: 1fr;
+  }
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-expo-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-markets-columns {
+    grid-template-columns: 1fr;
+  }
+  .hero-left .home-highlight-map,
+  .hero-right .home-highlight-markets {
+    margin-top: 18px;
+  }
+  .home-highlight-map .hero-markets-map {
+    min-height: 180px;
+  }
+  .home-highlight-map .hero-markets-map img {
+    max-height: 200px;
+    min-height: 170px;
+  }
+  .hero-markets-col + .hero-markets-col {
+    border-left: 0;
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+  }
+  .service-detail { grid-template-columns: 1fr; }
+  .nav-links {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: calc(var(--header) + 10px);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: var(--shadow);
+  }
+  .nav-links.open { display: flex; }
+  .menu-btn { display: inline-grid; place-items: center; }
+}
+@media (max-width: 620px) {
+  :root { --header: 76px; --logo-height: calc(var(--header) - 12px); }
+  .container { width: min(100% - 28px, var(--max)); }
+  section { padding: 68px 0; }
+  .hero {
+    padding-top: 64px;
+  }
+  .expo-cover-caption h1 {
+    max-width: none;
+  }
+  .expo-cover-captions {
+    min-height: 210px;
+  }
+  .hero-slide { transition: opacity 1s ease; transform: none; }
+  .hero-slide.is-active { transform: none; }
+  .legal-page { background-attachment: scroll; }
+  .destinations, .metric-grid, .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  .legal-content { padding: 24px 20px; }
+  .logo-img { max-width: min(280px, 68vw); }
+  .nav-actions .btn { display: none; }
+  .section-head { display: block; }
+  .section-head p { margin-top: 14px; }
+  .hero-actions .btn { width: 100%; }
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Dream Resort Development">
+        <img class="logo-img" src="assets/images/logo.png" alt="DREAM RESORT Development Co., Ltd. — Japan Land Operator Since 2009" width="360" height="78" />
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="index.html#home" data-i18n="navHome">HOME</a>
+        <a href="index.html#about" data-i18n="navAbout">ABOUT</a>
+        <a href="index.html#service" data-i18n="navService">SERVICE</a>
+        <a href="index.html#destinations" data-i18n="navDestinations">DESTINATIONS</a>
+        <a href="index.html#contact" data-i18n="navContact">CONTACT</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang" role="group" aria-label="Language switcher">
+          <button type="button" class="active" data-lang="ja" aria-pressed="true">JA</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-primary" href="index.html#contact" data-i18n="navCta">相談する</a>
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="legal-page">
+    <div class="container legal-content">
+      <a class="legal-back" href="index.html" data-i18n="legalBack">← トップページに戻る</a>
+      <h1>旅行業約款</h1>
+      <section class="legal-section">
+        <h2>第1章　総則</h2>
+        <h3>（適用範囲）第1条</h3>
+        <p>当社が旅行者との間で締結する募集型企画旅行に関する契約（以下「募集型企画旅行契約」といいます。）は、この約款の定めるところによります。この約款に定めのない事項については、法令又は一般に確立された慣習によります。</p>
+        <p>2. 当社が法令に反せず、かつ、旅行者の不利にならない範囲で書面により特約を結んだときは、前項の規定にかかわらず、その特約が優先します。</p>
+        <h3>（用語の定義）第2条</h3>
+        <p>この約款で「募集型企画旅行」とは、当社が、旅行者の募集のためにあらかじめ、旅行の目的地及び日程、旅行者が提供を受けることができる運送又は宿泊のサービスの内容並びに旅行者が当社に支払うべき旅行代金の額を定めた旅行に関する計画を作成し、これにより実施する旅行をいいます。</p>
+        <p>2. この約款で「国内旅行」とは、本邦内のみの旅行をいい、「海外旅行」とは、国内旅行以外の旅行をいいます。</p>
+        <p>3. この部で「通信契約」とは、当社が、当社又は当社の募集型企画旅行を当社を代理して販売する会社が提携するクレジットカード会社（以下「提携会社」といいます。）のカード会員との間で電話、郵便、ファクシミリその他の通信手段による申込みを受けて締結する募集型企画旅行契約であって、当社が旅行者に対して有する募集型企画旅行契約に基づく旅行代金等に係る債権又は債務を、当該債権又は債務が履行されるべき日以降に別に定める提携会社のカード会員規約に従って決済することについて、旅行者があらかじめ承諾し、かつ当該募集型企画旅行契約の旅行代金等を第12条第2項、第16条第1項後段、第19条第2項に定める方法により支払うことを内容とする募集型企画旅行契約をいいます。</p>
+        <p>4. この部で「電子承諾通知」とは、契約の申込みに対する承諾の通知であって、情報通信の技術を利用する方法のうち当社又は当社の募集型企画旅行を当社を代理して販売する会社が使用する電子計算機、ファクシミリ装置、テレックス又は電話機（以下「電子計算機等」といいます。）と旅行者が使用する電子計算機等とを接続する電気通信回線を通じて送信する方法により行うものをいいます。この約款で「カード利用日」とは、旅行者又は当社が募集型企画旅行契約に基づく旅行代金等の支払又は払戻債務を履行すべき日をいいます。</p>
+        <h3>（旅行契約の内容）第3条</h3>
+        <p>当社は、募集型企画旅行契約において、旅行者が当社の定める旅行日程に従って、運送・宿泊機関等の提供する運送、宿泊その他の旅行に関するサービス（以下「旅行サービス」といいます。）の提供を受けることができるように、手配し、旅程を管理することを引き受けます。</p>
+        <h3>（手配代行者）第4条</h3>
+        <p>当社は、募集型企画旅行契約の履行に当たって、手配の全部又は一部を本邦内又は本邦外の他の旅行業者、手配を業として行う者その他の補助者に代行させることがあります。</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>第2章　契約の締結</h2>
+        <h3>（契約の申込み）第5条</h3>
+        <p>当社に募集型企画旅行契約の申込みをしようとする旅行者は、当社所定の申込書（以下「申込書」といいます。）に所定の事項を記入の上、当社が別に定める金額の申込金とともに、当社に提出しなければなりません。</p>
+        <p>2. 当社に通信契約の申込みをしようとする旅行者は、前項の規定にかかわらず、申込みをしようとする募集型企画旅行の名称、旅行開始日、会員番号その他の事項（以下次条において「会員番号等」といいます。）を当社に通知しなければなりません。</p>
+        <p>3. 第1項の申込金は、旅行代金又は取消料若しくは違約料の一部として取り扱います。</p>
+        <p>4. 募集型企画旅行の参加に際し、特別な配慮を必要とする旅行者は、契約の申込時に申し出てください。このとき、当社は可能な範囲内でこれに応じます。</p>
+        <p>5. 前項の申出に基づき、当社が旅行者のために講じた特別な措置に要する費用は、旅行者の負担とします。</p>
+        <h3>（電話等による予約）第6条</h3>
+        <p>当社は、電話、郵便、ファクシミリその他の通信手段による募集型企画旅行契約の予約を受け付けます。この場合、予約の時点では契約は成立しておらず、旅行者は、当社が予約の承諾の旨を通知した後、当社が定める期間内に、前条第1項又は第2項の定めるところにより、当社に申込書と申込金を提出又は会員番号等を通知しなければなりません。</p>
+        <p>2. 前項の定めるところにより申込書と申込金の提出があったとき又は会員番号等の通知があったときは、募集型企画旅行契約の締結の順位は、当該予約の受付の順位によることとなります。</p>
+        <p>3. 旅行者が第1項の期間内に申込金を提出しない場合又は会員番号等を通知しない場合は、当社は、予約がなかったものとして取り扱います。</p>
+        <h3>（契約締結の拒否）第7条</h3>
+        <p>当社は、次に掲げる場合において、募集型企画旅行契約の締結に応じないことがあります。</p>
+        <ol>
+          <li>当社があらかじめ明示した性別、年齢、資格、技能その他の参加旅行者の条件を満たしていないとき。</li>
+          <li>応募旅行者数が募集予定数に達したとき。</li>
+          <li>旅行者が他の旅行者に迷惑を及ぼし、又は団体行動の円滑な実施を妨げるおそれがあるとき。</li>
+          <li>当社の業務上の都合があるとき。</li>
+          <li>通信契約を締結しようとする場合であって、旅行者の有するクレジットカードが無効である等、旅行者が旅行代金等に係る債務の一部又は全部を提携会社のカード会員規約に従って決済できないとき。</li>
+        </ol>
+        <h3>（契約の成立時期）第8条</h3>
+        <p>募集型企画旅行契約は、当社が契約の締結を承諾し、第5条第1項の申込金を受理した時に成立するものとします。</p>
+        <p>2. 通信契約は、前項の規定にかかわらず、当社が契約の締結を承諾する旨の通知を発した時に成立するものとします。ただし、当該契約において電子承諾通知を発する場合は、当該通知が旅行者に到達した時に成立するものとします。</p>
+        <h3>（契約書面の交付）第9条</h3>
+        <p>当社は、前条の定める契約の成立後速やかに、旅行者に、旅行日程、旅行サービスの内容、旅行代金その他の旅行条件及び当社の責任に関する事項を記載した書面（以下「契約書面」といいます。）を交付します。</p>
+        <p>2. 当社が募集型企画旅行契約により手配し旅程を管理する義務を負う旅行サービスの範囲は、前項の契約書面に記載するところによります。</p>
+        <h3>（確定書面）第10条</h3>
+        <p>前条第1項の契約書面において、確定された旅行日程、運送若しくは宿泊機関の名称を記載できない場合には、当該契約書面において利用予定の宿泊機関及び表示上重要な運送機関の名称を限定して列挙した上で、当該契約書面交付後、旅行開始日の前日（旅行開始日の前日から起算してさかのぼって7日目に当たる日以降に募集型企画旅行契約の申込みがなされた場合にあっては、旅行開始日）までの当該契約書面に定める日までに、これらの確定状況を記載した書面（以下「確定書面」といいます。）を交付します。</p>
+        <p>2. 前項の場合において、手配状況の確認を希望する旅行者から問い合わせがあったときは、確定書面の交付前であっても、当社は迅速かつ適切にこれに回答します。</p>
+        <p>3. 第1項の確定書面を交付した場合には、前条第2項の規定により当社が手配し旅程を管理する義務を負う旅行サービスの範囲は、当該確定書面に記載するところに特定されます。</p>
+        <h3>（情報通信の技術を利用する方法）第11条</h3>
+        <p>当社は、あらかじめ旅行者の承諾を得て、募集型企画旅行契約を締結しようとするときに旅行者に交付する旅行日程、旅行サービスの内容、旅行代金その他の旅行条件及び当社の責任に関する事項を記載した書面、契約書面又は確定書面の交付に代えて、情報通信の技術を利用する方法により当該書面に記載すべき事項（以下この条において「記載事項」といいます。）を提供したときは、旅行者の使用する通信機器に備えられたファイルに記載事項が記録されたことを確認します。</p>
+        <p>2. 前項の場合において、旅行者の使用に係る通信機器に記載事項を記録するためのファイルが備えられていないときは、当社の使用する通信機器に備えられたファイル（専ら当該旅行者の用に供するものに限ります。）に記載事項を記録し、旅行者が記載事項を閲覧したことを確認します。</p>
+        <h3>（旅行代金）第12条</h3>
+        <p>旅行者は、旅行開始日までの契約書面に記載する期日までに、当社に対し、契約書面に記載する金額の旅行代金を支払わなければなりません。</p>
+        <p>2. 通信契約を締結したときは、当社は、提携会社のカードにより所定の伝票への旅行者の署名なくして契約書面に記載する金額の旅行代金の支払いを受けます。また、カード利用日は旅行契約成立日とします。</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>第3章　契約の変更</h2>
+        <h3>（契約内容の変更）第13条</h3>
+        <p>当社は、天災地変、戦乱、暴動、運送・宿泊機関等の旅行サービス提供の中止、官公署の命令、当初の運行計画によらない運送サービスの提供その他の当社の関与し得ない事由が生じた場合において、旅行の安全かつ円滑な実施を図るためやむを得ないときは、旅行者にあらかじめ速やかに当該事由が関与し得ないものである理由及び当該事由との因果関係を説明して、旅行日程、旅行サービスの内容その他の募集型企画旅行契約の内容（以下「契約内容」といいます。）を変更することがあります。ただし、緊急の場合において、やむを得ないときは、変更後に説明します。</p>
+        <h3>（旅行代金の額の変更）第14条</h3>
+        <p>募集型企画旅行を実施するに当たり利用する運送機関について適用を受ける運賃・料金（以下この条において「適用運賃・料金」といいます。）が、著しい経済情勢の変化等により、募集型企画旅行の募集の際に明示した時点において有効なものとして公示されている適用運賃・料金に比べて、通常想定される程度を大幅に超えて増額又は減額される場合においては、当社は、その増額又は減額される金額の範囲内で旅行代金の額を増加し、又は減少することができます。</p>
+        <p>2. 当社は、前項の定めるところにより旅行代金を増額するときは、旅行開始日の前日から起算してさかのぼって15日目に当たる日より前に旅行者にその旨を通知します。</p>
+        <p>3. 当社は、第1項の定める適用運賃・料金の減額がなされるときは、同項の定めるところにより、その減少額だけ旅行代金を減額します。</p>
+        <p>4. 当社は、前条の規定に基づく契約内容の変更により旅行の実施に要する費用（当該契約内容の変更のためにその提供を受けなかった旅行サービスに対して取消料、違約料その他既に支払い、又はこれから支払わなければならない費用を含みます。）の減少又は増加が生じる場合（費用の増加が、運送・宿泊機関等が当該旅行サービスの提供を行っているにもかかわらず、運送・宿泊機関等の座席、部屋その他の諸設備の不足が発生したことによる場合を除きます。）には、当該契約内容の変更の際にその範囲内において旅行代金の額を変更することがあります。</p>
+        <p>5. 当社は、運送・宿泊機関等の利用人員により旅行代金が異なる旨を契約書面に記載した場合において、募集型企画旅行契約の成立後に当社の責に帰すべき事由によらず当該利用人員が変更になったときは、契約書面に記載したところにより旅行代金の額を変更することがあります。</p>
+        <h3>（旅行者の交替）第15条</h3>
+        <p>当社と募集型企画旅行契約を締結した旅行者は、当社の承諾を得て、契約上の地位を第三者に譲り渡すことができます。</p>
+        <p>2. 旅行者は、前項に定める当社の承諾を求めようとするときは、当社所定の用紙に所定の事項を記入の上、所定の金額の手数料とともに、当社に提出しなければなりません。</p>
+        <p>3. 第1項の契約上の地位の譲渡は、当社の承諾があった時に効力を生ずるものとし、以後、旅行契約上の地位を譲り受けた第三者は、旅行者の当該募集型企画旅行契約に関する一切の権利及び義務を承継するものとします。</p>
+      </section>
+      <section class="legal-section">
+        <h2>第4章　契約の解除</h2>
+        <h3>（旅行者の解除権）第16条</h3>
+        <p>旅行者は、いつでも別表第1に定める取消料を当社に支払って募集型企画旅行契約を解除することができます。通信契約を解除する場合にあっては、当社は、提携会社のカードにより所定の伝票への旅行者の署名なくして取消料の支払いを受けます。</p>
+        <p>2. 旅行者は、次に掲げる場合において、前項の規定にかかわらず、旅行開始前に取消料を支払うことなく募集型企画旅行契約を解除することができます。</p>
+        <ol>
+          <li>当社によって契約内容が変更されたとき。ただし、その変更が別表第2左欄に掲げるものその他の重要なものであるときに限ります。</li>
+          <li>第14条第1項の規定に基づいて旅行代金が増額されたとき。</li>
+          <li>天災地変、戦乱、暴動、運送・宿泊機関等の旅行サービス提供の中止、官公署の命令その他の事由が生じた場合において、旅行の安全かつ円滑な実施が不可能となり、又は不可能となるおそれが極めて大きいとき。</li>
+          <li>当社が旅行者に対し、第10条第1項の期日までに、確定書面を交付しなかったとき。</li>
+          <li>当社の責に帰すべき事由により、契約書面に記載した旅行日程に従った旅行の実施が不可能となったとき。</li>
+        </ol>
+        <p>3. 旅行者は、旅行開始後において、当該旅行者の責に帰すべき事由によらず契約書面に記載した旅行サービスを受領することができなくなったとき又は当社がその旨を告げたときは、第1項の規定にかかわらず、取消料を支払うことなく、旅行サービスの当該受領することができなくなった部分の契約を解除することができます。</p>
+        <p>4. 前項の場合において、当社は、旅行代金のうち旅行サービスの当該受領することができなくなった部分に係る金額を旅行者に払い戻します。ただし、前項の場合が当社の責に帰すべき事由によらない場合においては、当該金額から、当該旅行サービスに対して取消料、違約料その他の既に支払い、又はこれから支払わなければならない費用に係る金額を差し引いたものを旅行者に払い戻します。</p>
+        <h3>（当社の解除権等−旅行開始前の解除）第17条</h3>
+        <p>当社は、次に掲げる場合において、旅行者に理由を説明して、旅行開始前に募集型企画旅行契約を解除することがあります。</p>
+        <ol>
+          <li>旅行者が当社があらかじめ明示した性別、年齢、資格、技能その他の参加旅行者の条件を満たしていないことが判明したとき。</li>
+          <li>旅行者が病気、必要な介助者の不在その他の事由により、当該旅行に耐えられないと認められるとき。</li>
+          <li>旅行者が他の旅行者に迷惑を及ぼし、又は団体旅行の円滑な実施を妨げるおそれがあると認められるとき。</li>
+          <li>旅行者が、契約内容に関し合理的な範囲を超える負担を求めたとき。</li>
+          <li>旅行者の数が契約書面に記載した最少催行人員に達しなかったとき。</li>
+          <li>スキーを目的とする旅行における必要な降雪量等の旅行実施条件であって契約の締結の際に明示したものが成就しないおそれが極めて大きいとき。</li>
+          <li>天災地変、戦乱、暴動、運送・宿泊機関等の旅行サービス提供の中止、官公署の命令その他の当社の関与し得ない事由が生じた場合において、契約書面に記載した旅行日程に従った旅行の安全かつ円滑な実施が不可能となり、又は不可能となるおそれが極めて大きいとき。</li>
+          <li>通信契約を締結した場合であって、旅行者の有するクレジットカードが無効になる等、旅行者が旅行代金等に係る債務の一部又は全部を提携会社のカード会員規約に従って決済できなくなったとき。</li>
+        </ol>
+        <p>2. 旅行者が第12条第1項の契約書面に記載する期日までに旅行代金を支払わないときは、当該期日の翌日において旅行者が募集型企画旅行契約を解除したものとします。この場合において、旅行者は、当社に対し、前条第1項に定める取消料に相当する額の違約料を支払わなければなりません。</p>
+        <p>3. 当社は、第1項第5号に掲げる事由により募集型企画旅行契約を解除しようとするときは、旅行開始日の前日から起算してさかのぼって、国内旅行にあっては13日目（日帰り旅行については、3日目）に当たる日より前に、海外旅行にあっては23日目（別表第1に規定するピーク時に旅行を開始するものについては33日目）に当たる日より前に、旅行を中止する旨を旅行者に通知します。</p>
+        <h3>（当社の解除権−旅行開始後の解除）第18条</h3>
+        <p>当社は、次に掲げる場合において、旅行開始後であっても、旅行者に理由を説明して、募集型企画旅行契約の一部を解除することがあります。</p>
+        <ol>
+          <li>旅行者が病気、必要な介助者の不在その他の事由により旅行の継続に耐えられないとき。</li>
+          <li>旅行者が旅行を安全かつ円滑に実施するための添乗員その他の者による当社の指示への違背、これらの者又は同行する他の旅行者に対する暴行又は脅迫等により団体行動の規律を乱し、当該旅行の安全かつ円滑な実施を妨げるとき。</li>
+          <li>天災地変、戦乱、暴動、運送・宿泊機関等の旅行サービス提供の中止、官公署の命令その他の当社の関与し得ない事由が生じた場合であって、旅行の継続が不可能となったとき。</li>
+        </ol>
+        <p>2. 当社が前項の規定に基づいて募集型企画旅行契約を解除したときは、当社と旅行者との間の契約関係は、将来に向かってのみ消滅します。この場合において、旅行者が既に提供を受けた旅行サービスに関する当社の債務については、有効な弁済がなされたものとします。</p>
+        <p>3. 前項の場合において、当社は、旅行代金のうち旅行者がいまだその提供を受けていない旅行サービスに係る部分に係る金額から、当該旅行サービスに対して取消料、違約料その他の既に支払い、又はこれから支払わなければならない費用に係る金額を差し引いたものを旅行者に払い戻します。</p>
+        <h3>（旅行代金の払戻し）第19条</h3>
+        <p>当社は、第14条第3項から第5項までの規定により旅行代金が減額された場合又は前3条の規定により募集型企画旅行契約が解除された場合において、旅行者に対し払い戻すべき金額が生じたときは、旅行開始前の解除による払戻しにあっては解除の翌日から起算して7日以内に、減額又は旅行開始後の解除による払戻しにあっては契約書面に記載した旅行終了日の翌日から起算して30日以内に旅行者に対し当該金額を払い戻します。</p>
+        <p>2. 当社は、旅行者と通信契約を締結した場合であって、第14条第3項から第5項までの規定により旅行代金が減額された場合又は前3条の規定により通信契約が解除された場合において、旅行者に対し払い戻すべき金額が生じたときは、提携会社のカード会員規約に従って、旅行者に対し当該金額を払い戻します。この場合において、当社は、旅行開始前の解除による払戻しにあっては解除の翌日から起算して7日以内に、減額又は旅行開始後の解除による払戻しにあっては契約書面に記載した旅行終了日の翌日から起算して30日以内に旅行者に対し払い戻すべき額を通知するものとし、旅行者に当該通知を行った日をカード利用日とします。</p>
+        <p>3. 前2項の規定は第27条又は第30条第1項に規定するところにより旅行者又は当社が損害賠償請求権を行使することを妨げるものではありません。</p>
+        <h3>（契約解除後の帰路手配）第20条</h3>
+        <p>当社は、第18条第1項第1号又は第3号の規定によって旅行開始後に募集型企画旅行契約を解除したときは、旅行者の求めに応じて、旅行者が当該旅行の出発地に戻るために必要な旅行サービスの手配を引き受けます。</p>
+        <p>2. 前項の場合において、出発地に戻るための旅行に要する一切の費用は、旅行者の負担とします。</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>第5章　団体・グループ契約</h2>
+        <h3>（団体・グループ契約）第21条</h3>
+        <p>当社は、同じ行程を同時に旅行する複数の旅行者がその責任ある代表者（以下「契約責任者」といいます。）を定めて申し込んだ募集型企画旅行契約の締結については、本章の規定を適用します。</p>
+        <h3>（契約責任者）第22条</h3>
+        <p>当社は、特約を結んだ場合を除き、契約責任者はその団体・グループを構成する旅行者（以下「構成者」といいます。）の募集型企画旅行契約の締結に関する一切の代理権を有しているものとみなし、当該団体・グループに係る旅行業務に関する取引は、当該契約責任者との間で行います。</p>
+        <p>2. 契約責任者は、当社が定める日までに、構成者の名簿を当社に提出しなければなりません。</p>
+        <p>3. 当社は、契約責任者が構成者に対して現に負い、又は将来負うことが予測される債務又は義務については、何らの責任を負うものではありません。</p>
+        <p>4. 当社は、契約責任者が団体・グループに同行しない場合、旅行開始後においては、あらかじめ契約責任者が選任した構成者を契約責任者とみなします。</p>
+      </section>
+      <section class="legal-section">
+        <h2>第6章　旅程管理</h2>
+        <h3>（旅程管理）第23条</h3>
+        <p>当社は、旅行者の安全かつ円滑な旅行の実施を確保することに努力し、旅行者に対し次に掲げる業務を行います。ただし、当社が旅行者とこれと異なる特約を結んだ場合には、この限りではありません。</p>
+        <ol>
+          <li>旅行者が旅行中旅行サービスを受けることができないおそれがあると認められるときは、募集型企画旅行契約に従った旅行サービスの提供を確実に受けられるために必要な措置を講ずること。</li>
+          <li>前号の措置を講じたにもかかわらず、契約内容を変更せざるを得ないときは、代替サービスの手配を行うこと。この際、旅行日程を変更するときは、変更後の旅行日程が当初の旅行日程の趣旨にかなうものとなるよう努めること、また、旅行サービスの内容を変更するときは、変更後の旅行サービスが当初の旅行サービスと同様のものとなるよう努めること等、契約内容の変更を最小限にとどめるよう努力すること。</li>
+        </ol>
+        <h3>（当社の指示）第24条</h3>
+        <p>旅行者は、旅行開始後旅行終了までの間において、団体で行動するときは、旅行を安全かつ円滑に実施するための当社の指示に従わなければなりません。</p>
+        <h3>（添乗員等の業務）第25条</h3>
+        <p>当社は、旅行の内容により添乗員その他の者を同行させて第23条各号に掲げる業務その他当該募集型企画旅行に付随して当社が必要と認める業務の全部又は一部を行わせることがあります。</p>
+        <p>2. 前項の添乗員その他の者が同項の業務に従事する時間帯は、原則として8時から20時までとします。</p>
+        <h3>（保護措置）第26条</h3>
+        <p>当社は、旅行中の旅行者が、疾病、傷害等により保護を要する状態にあると認めたときは、必要な措置を講ずることがあります。この場合において、これが当社の責に帰すべき事由によるものでないときは、当該措置に要した費用は旅行者の負担とし、旅行者は当該費用を当社が指定する期日までに当社の指定する方法で支払わなければなりません。</p>
+      </section>
+      <section class="legal-section">
+        <h2>第7章　責任</h2>
+        <h3>（当社の責任）第27条</h3>
+        <p>当社は、募集型企画旅行契約の履行に当たって、当社又は当社が第4条の規定に基づいて手配を代行させた者（以下「手配代行者」といいます。）が故意又は過失により旅行者に損害を与えたときは、その損害を賠償する責に任じます。ただし、損害発生の翌日から起算して2年以内に当社に対して通知があったときに限ります。</p>
+        <p>2. 旅行者が天災地変、戦乱、暴動、運送・宿泊機関等の旅行サービス提供の中止、官公署の命令その他の当社又は当社の手配代行者の関与し得ない事由により損害を被ったときは、当社は、前項の場合を除き、その損害を賠償する責任を負うものではありません。</p>
+        <p>3. 当社は、手荷物について生じた第1項の損害については、同項の規定にかかわらず、損害発生の翌日から起算して、国内旅行にあっては14日以内に、海外旅行にあっては21日以内に当社に対して通知があったときに限り、旅行者1名につき15万円を限度（当社に故意又は重大な過失がある場合を除きます。）として賠償します。</p>
+        <h3>（特別補償）第28条</h3>
+        <p>当社は、前条第1項の規定に基づく当社の責任が生ずるか否かを問わず、別紙特別補償規程で定めるところにより、旅行者が募集型企画旅行参加中にその生命、身体又は手荷物の上に被った一定の損害について、あらかじめ定める額の補償金及び見舞金を支払います。</p>
+        <p>2. 前項の損害について当社が前条第1項の規定に基づく責任を負うときは、その責任に基づいて支払うべき損害賠償金の額の限度において、当社が支払うべき前項の補償金は、当該損害賠償金とみなします。</p>
+        <p>3. 前項に規定する場合において、第1項の規定に基づく当社の補償金支払義務は、当社が前条第1項の規定に基づいて支払うべき損害賠償金（前項の規定により損害賠償金とみなされる補償金を含みます。）に相当する額だけ縮減するものとします。</p>
+        <p>4. 当社の募集型企画旅行参加中の旅行者を対象として、別途の旅行代金を収受して当社が実施する募集型企画旅行については、主たる募集型企画旅行契約の内容の一部として取り扱います。</p>
+        <h3>（旅程保証）第29条</h3>
+        <p>当社は、別表第2左欄に掲げる契約内容の重要な変更（次の各号に掲げる変更（運送・宿泊機関等が当該旅行サービスの提供を行っているにもかかわらず、運送・宿泊機関等の座席、部屋その他の諸設備の不足が発生したことによるものを除きます。）を除きます。）が生じた場合は、旅行代金に同表右欄に記載する率を乗じた額以上の変更補償金を旅行終了日の翌日から起算して30日以内に支払います。ただし、当該変更について当社に第27条第1項の規定に基づく責任が発生することが明らかである場合には、この限りではありません。</p>
+        <ol>
+          <li>次に掲げる事由による変更
+            <ol type="i">
+              <li>天災地変</li>
+              <li>戦乱</li>
+              <li>暴動</li>
+              <li>官公署の命令</li>
+              <li>運送・宿泊機関等の旅行サービス提供の中止</li>
+              <li>当初の運行計画によらない運送サービスの提供</li>
+              <li>旅行参加者の生命又は身体の安全確保のため必要な措置</li>
+            </ol>
+          </li>
+          <li>第16条から第18条までの規定に基づいて募集型企画旅行契約が解除されたときの当該解除された部分に係る変更</li>
+        </ol>
+        <p>2. 当社が支払うべき変更補償金の額は、旅行者1名に対して一募集型企画旅行につき旅行代金に15％以上の当社が定める率を乗じた額をもって限度とします。また、旅行者1名に対して一募集型企画旅行につき支払うべき変更補償金の額が千円未満であるときは、当社は、変更補償金を支払いません。</p>
+        <p>3. 当社が第1項の規定に基づき変更補償金を支払った後に、当該変更について当社に第27条第1項の規定に基づく責任が発生することが明らかになった場合には、旅行者は当該変更に係る変更補償金を当社に返還しなければなりません。この場合、当社は、同項の規定に基づき当社が支払うべき損害賠償金の額と旅行者が返還すべき変更補償金の額とを相殺した残額を支払います。</p>
+        <h3>（旅行者の責任）第30条</h3>
+        <p>旅行者の故意又は過失により当社が損害を被ったときは、当該旅行者は、損害を賠償しなければなりません。</p>
+        <p>2. 旅行者は、募集型企画旅行契約を締結するに際しては、当社から提供された情報を活用し、旅行者の権利義務その他の募集型企画旅行契約の内容について理解するよう努めなければなりません。</p>
+        <p>3. 旅行者は、旅行開始後において、契約書面に記載された旅行サービスを円滑に受領するため、万が一契約書面と異なる旅行サービスが提供されたと認識したときは、旅行地において速やかにその旨を当社、当社の手配代行者又は当該旅行サービス提供者に申し出なければなりません。</p>
+      </section>
+      <section class="legal-section">
+        <h2>第8章　弁済業務保証金（旅行業協会の保証社員である場合）</h2>
+        <h3>（弁済業務保証金）第27条</h3>
+        <p>当社は、社団法人全国旅行業協会（東京都港区虎ノ門4丁目1番20号 田中山ビル）の保証社員になっております。</p>
+        <p>2. 当社と主催旅行契約を締結した旅行者は、その取引によって生じた債権に関し、前項の社団法人全国旅行業協会が供託している弁済業務保証金から7,000万円に達するまで弁済を受けることができます。</p>
+        <p>3. 当社は、旅行業法第22条の10第１項の規定に基づき、社団法人全国旅行業協会に弁済業務保証金分担金を納付しておりますので、同法第７条第１項に基づく営業保証金は供託しておりません。</p>
+        <h3>苦情の申出</h3>
+        <p>旅行者は、当社との旅行業務に関する苦情について、当事者間で解決が出来なかった場合は、下記の社団法人全国旅行業協会にその解決について助力を求めるための申出をすることができます。</p>
+        <p class="legal-signoff">記<br />名　称　　社団法人　全国旅行業協会<br />所在地　　東京都港区虎ノ門4丁目1番20号 田中山ビル<br />以上</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong data-i18n="footerCompany">ドリームリゾート開発株式会社</strong><br />
+        <span data-i18n="footerDesc">Overseas Travel Agency B2B Land Operator for Japan</span>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="company.html" data-i18n="footerLinkCompany">会社案内</a>
+          <a href="privacy.html" data-i18n="footerLinkPrivacy">個人情報保護ポリシー</a>
+          <a href="terms.html" data-i18n="footerLinkTerms">旅行業約款</a>
+          <a href="inquiry.html" data-i18n="footerLinkInquiry">お問い合わせ</a>
+                        </nav>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61591808600500" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span data-i18n="footerFacebook">Facebook</span>
+          </a>
+        </div>
+      </div>
+      <div data-i18n="footerSeo">SEO: 訪日旅行 / インバウンド / ランドオペレーター</div>
+    </div>
+  </footer>
+  <script>
+window.I18N = {
+  formOptions: {
+    ja: [
+      "ホテル / バス / レストラン",
+      "MICE",
+      "モデルコース",
+      "航空券"
+    ],
+    zh: [
+      "酒店 / 巴士 / 餐厅",
+      "MICE",
+      "参考行程",
+      "机票"
+    ],
+    en: [
+      "Hotel / Bus / Restaurant",
+      "MICE",
+      "Model Course",
+      "Air Ticket"
+    ]
+  },
+
+  meta: {
+    ja: {
+      title: "ドリームリゾート開発株式会社｜訪日旅行専門ランドオペレーター",
+      description: "ドリームリゾート開発株式会社は、海外旅行会社向けの訪日旅行専門ランドオペレーターです。ホテル手配、貸切バス、レストラン、行程作成、航空券予約まで一括対応。"
+    },
+    zh: {
+      title: "梦幻度假开发株式会社｜日本入境游专业地接社",
+      description: "梦幻度假开发株式会社面向海外旅行社，提供酒店、包车、餐厅、行程设计与机票预订的一站式日本入境游地接服务。"
+    },
+    en: {
+      title: "Dream Resort Development Inc. | Japan Inbound Land Operator",
+      description: "Dream Resort Development Inc. is a Japan inbound land operator for overseas travel agencies, offering hotel, bus, restaurant, itinerary and air ticket services."
+    }
+  },
+
+  dict: {
+    ja: {
+      company: "ドリームリゾート開発株式会社",
+      navHome: "HOME",
+      navNews: "NEWS",
+      navExpo: "EXPO",
+      navAbout: "ABOUT",
+      navService: "SERVICE",
+      navDestinations: "DESTINATIONS",
+      navContact: "CONTACT",
+      navCta: "相談する",
+      newsEyebrow: "NEWS",
+      newsTitle: "最新情報・展会案内",
+      newsLead: "海外旅行会社の皆様向けに、展会出展情報・行程更新・サービス案内を掲載しています。",
+      newsTagExpo: "展会",
+      newsTagUpdate: "更新",
+      newsTagMice: "MICE",
+      news1Date: "2026年",
+      news1Title: "海外旅行展会・商談会",
+      news1Text: "長野県観光誘致商談会、JNTO VISIT JAPAN Mart への参加予定および過去の出展実績は、展会ページでご確認いただけます。",
+      news2Date: "2026年6月",
+      news2Title: "ゴールデンルート見積表を更新",
+      news2Text: "ゴールデンルート普通版・アップグレード版の参考見積表を更新しました。2026年12月31日まで有効です。団体人数に応じた見積はお問い合わせください。",
+      news3Date: "2026年6月",
+      news3Title: "団体旅行・視察団の受付強化",
+      news3Text: "MICE、企業視察、旅行商品開発に向けた日本側手配窓口として、ホテル・バス・行程造成の一括提案を強化しています。",
+      newsViewExpo: "展会一覧を見る →",
+      newsViewDest: "行程を見る →",
+      newsContact: "お問い合わせ →",
+      eyebrow: "海外旅行会社向け・訪日旅行専門",
+      heroTitle: "日本の旅を、正確に、美しく、確実に手配する。",
+      heroLead: "ドリームリゾート開発株式会社は、ホテル・貸切バス・レストラン・行程作成・航空券予約まで一括対応する訪日旅行専門ランドオペレーターです。",
+      heroPrimary: "サービスを見る",
+      heroSecondary: "旅行手配を相談",
+      heroNote: "団体旅行・MICE・旅行卸向けのB2Bパートナー",
+      heroImageAlt: "東京の都市景観 - 訪日旅行地接サービス",
+      summaryTitle: "Core Position",
+      summaryText: "海外旅行会社向け訪日旅行専門ランドオペレーター",
+      metric1: "主要手配領域",
+      metricGroupsValue: "400-600",
+      metricGroupsLabel: "団/月（2025年11月までの実績）",
+      metric2: "旅行会社専用",
+      metric3: "法人・団体対応",
+      metric4: "全国目的地",
+      marketsTitle: "コア市場",
+      marketsTitleEn: "Our Markets",
+      marketsKeyTitle: "主要市場",
+      marketsKeyTitleEn: "Key Markets",
+      marketsExpandTitle: "拡大市場",
+      marketsExpandTitleEn: "Expanding Markets",
+      marketChina: "中国 China",
+      marketVietnam: "ベトナム Vietnam",
+      marketMalaysia: "マレーシア Malaysia",
+      marketSingapore: "シンガポール Singapore",
+      marketIndonesia: "インドネシア Indonesia",
+      marketPhilippines: "フィリピン Philippines",
+      marketsMapAlt: "大阪を拠点とした中国・東南アジアへのネットワーク",
+      marketsMapTitle: "大阪拠点ネットワーク",
+      tag1: "訪日旅行",
+      tag2: "インバウンド",
+      tag3: "ランドオペレーター",
+      tag4: "団体旅行",
+      aboutTitle: "信頼できる日本側パートナーとして。",
+      aboutText: "海外旅行社、旅行卸、MICEクライアントが日本ツアーを安心して販売できるよう、現地手配の品質・納期・調整力を重視しています。",
+      about1: "訪日団体旅行に必要な複数手配を一括管理",
+      about2: "海外パートナーとの円滑なコミュニケーション",
+      about3: "高品質・国際基準・安定運用を重視",
+      aboutExpoTitle: "海外旅行展会への参加",
+      aboutExpoLead: "アジア各国の旅行展示会・商談会に継続参加し、海外旅行会社とのパートナーシップを拡大しています。",
+      expoCatalogEyebrow: "CATALOG",
+      aboutExpo1Alt: "豪日観光プロモーションセミナー 2026 チーム集合写真",
+      aboutExpo1Caption: "豪日観光プロモーションセミナー 2026 — チーム集合写真",
+      aboutExpo2Alt: "INDONESIA TRAVEL EXPO 2026 ジャカルタ出展",
+      aboutExpo2Caption: "INDONESIA TRAVEL EXPO 2026（ジャカルタ）— 出展・商談",
+      expoBack: "← 展会一覧に戻る",
+      expoBackNews: "← NEWS に戻る",
+      expoUpcomingBadge: "参加予定",
+      expoViewDetail: "詳細を見る →",
+      expoNaganoTitle: "令和8年度 長野県観光誘致商談会",
+      expoNaganoDateShort: "2026年7月10日",
+      expoNaganoDate: "2026年7月10日",
+      expoNaganoIntro: "ドリームリゾート開発株式会社は、令和8年度長野県観光誘致商談会に参加予定です。長野・北信越エリアを活用した訪日団体旅行、温泉・雪見・自然体験などの商品構成について、海外旅行会社の皆様と商談を行います。",
+      expoNaganoPoint1: "長野県内の宿泊・交通・観光資源を活用した団体行程のご提案",
+      expoNaganoPoint2: "海外旅行会社向け B2B 商談・資料請求を事前受付",
+      expoJntoTitle: "日本政府観光局（JNTO）「VISIT JAPAN Travel & MICE Mart 2026」",
+      expoJntoTitleShort: "JNTO VISIT JAPAN Travel & MICE Mart 2026",
+      expoJntoDateShort: "9月24日～26日",
+      expoJntoDate: "2026年9月24日（木）～26日（土）",
+      expoJntoIntro: "日本政府観光局（JNTO）主催の VISIT JAPAN Travel & MICE Mart 2026 に出展予定です。関東・関西・ゴールデンルート各行程の商談、MICE 手配、旅行商品開発に関するご相談を承ります。",
+      expoJntoPoint1: "訪日旅行・MICE 向けランドオペレーターとしての総合提案",
+      expoJntoPoint2: "会期前の事前商談・資料請求を受付中",
+      expoMeetingCta: "商談・資料請求",
+      expoAustraliaIntro: "豪日観光プロモーションセミナーに参加し、海外旅行会社・関係機関とのネットワークを拡大しました。訪日旅行商品の共同開発に向けた情報交換を行っています。",
+      expoIndonesiaIntro: "ジャカルタで開催された INDONESIA TRAVEL EXPO 2026 に出展し、東南アジアの旅行会社・バイヤーとの商談を実施しました。日本 inbound 商品の提案とパートナーシップ構築を進めています。",
+      serviceTitle: "訪日旅行手配をワンストップで。",
+      serviceLead: "ホテル手配から行程作成まで、旅行会社が必要とする日本側オペレーションを整理して提供します。",
+      tabHotel: "ホテル手配",
+      tabBus: "バス手配",
+      tabRestaurant: "レストラン手配",
+      tabItinerary: "行程作成",
+      tabAir: "航空券予約",
+      hotelTitle: "ホテル手配",
+      hotelText: "団体・個人・MICEに合わせて、エリア、予算、グレード、動線を考慮した宿泊先を提案します。",
+      busTitle: "貸切バス手配",
+      busText: "空港送迎、都市間移動、観光周遊に対応。安全性と運行効率を重視した車両手配を行います。",
+      restaurantTitle: "レストラン手配",
+      restaurantText: "団体対応、食事制限、地域特色を踏まえ、日本らしさと運営安定性を両立します。",
+      itineraryTitle: "行程作成",
+      itineraryText: "訪問地、移動時間、季節性、ターゲット客層を踏まえ、販売しやすい旅行商品を設計します。",
+      airTitle: "航空券予約",
+      airText: "訪日旅行の前後工程まで含め、全体スケジュールに合う航空券予約をサポートします。",
+      targetTitle: "Target Clients",
+      targetText: "海外旅行社、旅行卸、MICEクライアントの日本側手配窓口として機能します。",
+      clientTag1: "Travel Agency",
+      clientTag2: "Wholesaler",
+      clientTag3: "MICE",
+      destTitle: "主要エリアを柔軟に組み合わせ。",
+      destLead: "定番ゴールデンルートから地方周遊、企業視察、報奨旅行まで目的に応じた構成が可能です。",
+      destTokyo: "関東",
+      destTokyoSub: "7日5晚 · 1日自由行",
+      destTokyoAlt: "関東 - ビジネス / 文化 / MICE",
+      destKyoto: "Kyoto",
+      destKyotoSub: "Tradition / Premium Experience",
+      destKyotoAlt: "京都 - 传统 / 高端体验",
+      destGoldenRoute: "ゴールデンルート",
+      destGoldenRouteSub: "6D5N · 普通版",
+      destGoldenRouteAlt: "黄金路线 大阪→东京 6天5晚 普通版",
+      destGoldenRouteUpgrade: "ゴールデンルート",
+      destGoldenRouteUpgradeSub: "6D5N · アップグレード版",
+      destGoldenRouteUpgradeAlt: "黄金路线 大阪→东京 6天5晚 升级版",
+      destGoldenStandardLink: "普通版を見る",
+      destGoldenUpgradeLink: "アップグレード版を見る",
+      destKansai: "関西",
+      destKansaiSub: "6日5晚 · 関西一地",
+      destKansaiAlt: "関西 - 6日5晚 · 1日自由行",
+      destOsaka: "Osaka",
+      destOsakaSub: "Food / Gateway / Group Travel",
+      destOsakaAlt: "大阪 - 美食 / 门户 / 团体游",
+      destHokkaido: "Hokkaido",
+      destHokkaidoSub: "Nature / Snow / Incentive",
+      destHokkaidoAlt: "北海道 - 自然 / 冰雪 / 奖励旅游",
+      destViewItinerary: "行程を見る →",
+      detailBack: "← 目的地一覧に戻る",
+      detailHighlights: "行程のポイント",
+      detailItineraryTitle: "モデル行程",
+      detailDurationLabel: "日数",
+      detailGroupLabel: "推奨人数",
+      detailSeasonLabel: "おすすめシーズン",
+      detailCta: "この行程で相談する",
+      detailPosterTitle: "行程ポスター",
+      detailDownloadPoster: "ポスターを保存",
+      detailMeals: "食事",
+      detailHotel: "宿泊",
+      detailTransport: "交通",
+      detailPricingTitle: "行程报价（JPY/人）",
+      detailIncludesTitle: "見積条件",
+      detailSpotsTitle: "主要スポット",
+      detailPriceNote: "人数により価格が変動します。以下は参考报价表です。",
+      contactTitle: "訪日旅行手配のご相談はこちら。",
+      contactLead: "団体旅行、MICE、旅行商品造成など、案件概要をお知らせください。",
+      contactTag1: "ホテル手配",
+      contactTag2: "貸切バス",
+      contactTag3: "団体旅行",
+      contactTag4: "旅行手配",
+      formCompany: "会社名",
+      formName: "ご担当者名",
+      formType: "お問い合わせ種別",
+      formMessage: "案件概要",
+      formSubmit: "送信する",
+      formSubmitting: "送信中...",
+      formSuccess: "お問い合わせを受け付けました。担当者よりご連絡いたします。",
+      formError: "送信に失敗しました。時間をおいて再度お試しください。",
+      footerCompany: "ドリームリゾート開発株式会社",
+      footerDesc: "Overseas Travel Agency B2B Land Operator for Japan",
+      footerSeo: "SEO: 訪日旅行 / インバウンド / ランドオペレーター / ホテル手配 / 貸切バス",
+      footerLinkCompany: "会社案内",
+      footerLinkPrivacy: "個人情報保護ポリシー",
+      footerLinkTerms: "旅行業約款",
+      footerLinkInquiry: "お問い合わせ",
+      footerFacebook: "Facebook",
+      legalBack: "← トップページに戻る",
+      inquiryFormCta: "Webフォームから問い合わせる",
+      footerLinkCompany: "会社案内",
+      footerLinkPrivacy: "個人情報保護ポリシー",
+      footerLinkTerms: "旅行業約款",
+      footerLinkInquiry: "お問い合わせ",
+      legalBack: "← トップページに戻る",
+      inquiryFormCta: "Webフォームから問い合わせる"
+    },
+
+    zh: {
+      company: "梦幻度假开发株式会社",
+      navHome: "首页",
+      navNews: "最新情报",
+      navExpo: "展会",
+      navAbout: "关于我们",
+      navService: "服务",
+      navDestinations: "目的地",
+      navContact: "联系我们",
+      navCta: "立即咨询",
+      newsEyebrow: "最新情报",
+      newsTitle: "最新情报与展会信息",
+      newsLead: "面向海外旅行社，发布展会参展、行程更新与服务通知。",
+      newsTagExpo: "展会",
+      newsTagUpdate: "更新",
+      newsTagMice: "MICE",
+      news1Date: "2026年",
+      news1Title: "海外旅游展会与商洽会",
+      news1Text: "长野县观光招揽商洽会、JNTO VISIT JAPAN Mart 的参展计划及过往出展记录，请见展会专页。",
+      news2Date: "2026年6月",
+      news2Title: "黄金路线报价表已更新",
+      news2Text: "黄金路线普通版与升级版参考报价表已更新，有效期至2026年12月31日。团体人数报价欢迎咨询。",
+      news3Date: "2026年6月",
+      news3Title: "强化团体与考察团受理",
+      news3Text: "作为 MICE、企业考察及旅行产品开发的日本地接窗口，强化酒店、巴士与行程设计的一揽子提案。",
+      newsViewExpo: "查看展会列表 →",
+      newsViewDest: "查看行程 →",
+      newsContact: "联系我们 →",
+      eyebrow: "面向海外旅行社・日本入境游专业",
+      heroTitle: "让日本旅行安排更准确、更高级、更可靠。",
+      heroLead: "梦幻度假开发株式会社是一家面向海外旅行社的日本入境游专业地接运营商，提供酒店、包车、餐厅、行程设计与机票预订的一站式服务。",
+      heroPrimary: "查看服务",
+      heroSecondary: "咨询旅行安排",
+      heroNote: "服务团体旅行、MICE与旅游批发商的B2B伙伴",
+      heroImageAlt: "东京城市景观 - 日本入境游地接服务",
+      summaryTitle: "核心定位",
+      summaryText: "面向海外旅行公司的日本入境游专业地接社",
+      metric1: "核心服务领域",
+      metricGroupsValue: "400-600",
+      metricGroupsLabel: "团/月（2025年11月前数据）",
+      metric2: "旅行社专用",
+      metric3: "企业与团体对应",
+      metric4: "日本全国目的地",
+      marketsTitle: "核心市场",
+      marketsTitleEn: "Our Markets",
+      marketsKeyTitle: "主要市场",
+      marketsKeyTitleEn: "Key Markets",
+      marketsExpandTitle: "拓展市场",
+      marketsExpandTitleEn: "Expanding Markets",
+      marketChina: "中国 China",
+      marketVietnam: "越南 Vietnam",
+      marketMalaysia: "马来西亚 Malaysia",
+      marketSingapore: "新加坡 Singapore",
+      marketIndonesia: "印度尼西亚 Indonesia",
+      marketPhilippines: "菲律宾 Philippines",
+      marketsMapAlt: "以大阪为枢纽连接中国与东南亚的业务网络图",
+      marketsMapTitle: "大阪枢纽网络",
+      tag1: "访日旅行",
+      tag2: "入境游",
+      tag3: "地接社",
+      tag4: "团体旅行",
+      aboutTitle: "成为值得信赖的日本当地合作伙伴。",
+      aboutText: "我们重视当地资源、交付效率与协调能力，帮助海外旅行社、批发商和MICE客户安心销售日本旅游产品。",
+      about1: "统一管理访日团体旅行所需的多项安排",
+      about2: "与海外合作伙伴保持顺畅沟通",
+      about3: "重视高品质、国际标准与稳定运营",
+      aboutExpoTitle: "参与海外旅游展会",
+      aboutExpoLead: "持续参加亚洲各国旅游展览与商务洽谈会，拓展与海外旅行社的合作网络。",
+      expoCatalogEyebrow: "展会目录",
+      aboutExpo1Alt: "2026年豪日旅游推广研讨会团队合影",
+      aboutExpo1Caption: "豪日観光プロモーションセミナー 2026 — 团队合影",
+      aboutExpo2Alt: "2026年印尼旅游博览会雅加达参展",
+      aboutExpo2Caption: "INDONESIA TRAVEL EXPO 2026（雅加达）— 参展与商务洽谈",
+      expoBack: "← 返回展会列表",
+      expoBackNews: "← 返回最新情报",
+      expoUpcomingBadge: "计划参加",
+      expoViewDetail: "查看详情 →",
+      expoNaganoTitle: "令和8年度长野县观光招揽商洽会",
+      expoNaganoDateShort: "2026年7月10日",
+      expoNaganoDate: "2026年7月10日",
+      expoNaganoIntro: "梦幻度假开发株式会社计划参加令和8年度长野县观光招揽商洽会，就长野及北信越地区的访日团体旅行、温泉、赏雪与自然体验等产品组合，与海外旅行社进行洽谈。",
+      expoNaganoPoint1: "基于长野县内住宿、交通与观光资源的团体行程提案",
+      expoNaganoPoint2: "面向海外旅行社的 B2B 商洽与资料索取，可提前预约",
+      expoJntoTitle: "日本政府观光局（JNTO）「VISIT JAPAN Travel & MICE Mart 2026」",
+      expoJntoTitleShort: "JNTO VISIT JAPAN Travel & MICE Mart 2026",
+      expoJntoDateShort: "9月24日～26日",
+      expoJntoDate: "2026年9月24日（周四）～26日（周六）",
+      expoJntoIntro: "计划参展日本政府观光局（JNTO）主办的 VISIT JAPAN Travel & MICE Mart 2026，欢迎就关东、关西、黄金路线行程商洽、MICE 安排及旅行产品开发进行咨询。",
+      expoJntoPoint1: "面向访日旅行与 MICE 的地接综合提案",
+      expoJntoPoint2: "会期前可预约商洽与资料索取",
+      expoMeetingCta: "商洽与资料索取",
+      expoAustraliaIntro: "参加豪日旅游推广研讨会，拓展与海外旅行社及相关机构的合作网络，就访日旅行产品的联合开发进行信息交流。",
+      expoIndonesiaIntro: "参展于雅加达举办的 INDONESIA TRAVEL EXPO 2026，与东南亚旅行社及买家进行商洽，推进日本入境产品提案与合作伙伴关系。",
+      serviceTitle: "一站式日本入境游安排。",
+      serviceLead: "从酒店到行程设计，系统化提供旅行社所需的日本当地运营支持。",
+      tabHotel: "酒店安排",
+      tabBus: "巴士安排",
+      tabRestaurant: "餐厅安排",
+      tabItinerary: "行程设计",
+      tabAir: "机票预订",
+      hotelTitle: "酒店安排",
+      hotelText: "根据团体、散客和MICE需求，综合考虑区域、预算、等级与动线，推荐合适住宿。",
+      busTitle: "包车巴士安排",
+      busText: "支持机场接送、城市间移动和观光周游，重视安全与运行效率。",
+      restaurantTitle: "餐厅安排",
+      restaurantText: "兼顾团体接待、饮食限制与地域特色，实现日本体验与稳定运营。",
+      itineraryTitle: "行程设计",
+      itineraryText: "结合目的地、交通时间、季节性与客群，设计更易销售的旅行产品。",
+      airTitle: "机票预订",
+      airText: "支持旅行前后段安排，匹配整体日程的机票预订。",
+      targetTitle: "目标客户",
+      targetText: "作为海外旅行社、旅行批发商和MICE客户的日本当地安排窗口。",
+      clientTag1: "旅行社",
+      clientTag2: "批发商",
+      clientTag3: "MICE",
+      destTitle: "灵活组合日本主要目的地。",
+      destLead: "从经典黄金路线到地方深度游、企业考察与奖励旅行，可按目的组合。",
+      destTokyo: "东京",
+      destTokyoSub: "7天5晚 · 含1天自由行",
+      destTokyoAlt: "东京 - 商务 / 文化 / MICE",
+      destKyoto: "京都",
+      destKyotoSub: "传统 / 高端体验",
+      destKyotoAlt: "京都 - 传统 / 高端体验",
+      destGoldenRoute: "黄金路线",
+      destGoldenRouteSub: "6天5晚 · 普通版",
+      destGoldenRouteAlt: "大阪→东京 黄金路线 普通版",
+      destGoldenRouteUpgrade: "黄金路线",
+      destGoldenRouteUpgradeSub: "6天5晚 · 升级版",
+      destGoldenRouteUpgradeAlt: "大阪→东京 黄金路线 升级版",
+      destGoldenStandardLink: "查看普通版",
+      destGoldenUpgradeLink: "查看升级版",
+      destKansai: "关西",
+      destKansaiSub: "6天5晚 · 含1天自由行",
+      destKansaiAlt: "关西 - 大阪·京都·神户·奈良",
+      destOsaka: "大阪",
+      destOsakaSub: "美食 / 门户 / 团体游",
+      destOsakaAlt: "大阪 - 美食 / 门户 / 团体游",
+      destHokkaido: "北海道",
+      destHokkaidoSub: "自然 / 冰雪 / 奖励旅游",
+      destHokkaidoAlt: "北海道 - 自然 / 冰雪 / 奖励旅游",
+      destViewItinerary: "查看行程 →",
+      detailBack: "← 返回目的地列表",
+      detailHighlights: "行程亮点",
+      detailItineraryTitle: "具体行程",
+      detailDurationLabel: "天数",
+      detailGroupLabel: "建议人数",
+      detailSeasonLabel: "推荐季节",
+      detailCta: "咨询此行程",
+      detailPosterTitle: "行程海报",
+      detailDownloadPoster: "下载海报",
+      detailMeals: "用餐",
+      detailHotel: "住宿",
+      detailTransport: "交通",
+      detailPricingTitle: "行程报价（日元/人）",
+      detailIncludesTitle: "报价条件",
+      detailSpotsTitle: "主要景点",
+      detailPriceNote: "价格随团组人数变动，以下为参考报价表。",
+      contactTitle: "欢迎咨询日本入境游安排。",
+      contactLead: "请告知团体旅行、MICE或旅行产品开发等项目概要。",
+      contactTag1: "酒店安排",
+      contactTag2: "包车巴士",
+      contactTag3: "团体旅行",
+      contactTag4: "旅行手配",
+      formCompany: "公司名称",
+      formName: "联系人",
+      formType: "咨询类型",
+      formMessage: "项目概要",
+      formSubmit: "提交咨询",
+      formSubmitting: "提交中...",
+      formSuccess: "已收到您的咨询，我们将尽快与您联系。",
+      formError: "提交失败，请稍后重试。",
+      footerCompany: "梦幻度假开发株式会社",
+      footerDesc: "面向海外旅行社的日本入境游B2B地接运营商",
+      footerSeo: "SEO: 访日旅行 / 入境游 / 地接社 / 酒店安排 / 包车巴士",
+      footerLinkCompany: "公司介绍",
+      footerLinkPrivacy: "隐私政策",
+      footerLinkTerms: "旅行業約款",
+      footerLinkInquiry: "联系我们",
+      footerFacebook: "Facebook",
+      legalBack: "← 返回首页",
+      inquiryFormCta: "通过网页表单咨询",
+      footerLinkCompany: "公司介绍",
+      footerLinkPrivacy: "隐私政策",
+      footerLinkTerms: "旅行条款",
+      footerLinkInquiry: "联系我们",
+      legalBack: "← 返回首页",
+      inquiryFormCta: "通过网页表单咨询"
+    },
+
+    en: {
+      company: "Dream Resort Development Inc.",
+      navHome: "Home",
+      navNews: "News",
+      navExpo: "Expo",
+      navAbout: "About",
+      navService: "Services",
+      navDestinations: "Destinations",
+      navContact: "Contact",
+      navCta: "Contact Us",
+      newsEyebrow: "NEWS",
+      newsTitle: "News & Trade Shows",
+      newsLead: "Updates for overseas travel partners: exhibitions, itinerary revisions and service announcements.",
+      newsTagExpo: "Expo",
+      newsTagUpdate: "Update",
+      newsTagMice: "MICE",
+      news1Date: "2026",
+      news1Title: "Overseas travel exhibitions & meetings",
+      news1Text: "Upcoming participation in the Nagano tourism promotion meeting and JNTO VISIT JAPAN Mart, plus past exhibition records, are listed on our expo page.",
+      news2Date: "Jun 2026",
+      news2Title: "Golden Route pricing refreshed",
+      news2Text: "Reference pricing for Golden Route Standard and Upgrade tours has been updated, valid until December 31, 2026. Contact us for group quotes.",
+      news3Date: "Jun 2026",
+      news3Title: "Expanded group & inspection support",
+      news3Text: "Strengthening one-stop Japan land arrangements for MICE, corporate visits and travel product development.",
+      newsViewExpo: "View expo list →",
+      newsViewDest: "View itineraries →",
+      newsContact: "Contact us →",
+      eyebrow: "Japan inbound travel specialist for overseas agencies",
+      heroTitle: "Precise, refined and reliable Japan travel operations.",
+      heroLead: "Dream Resort Development Inc. is a Japan inbound land operator offering hotel, charter bus, restaurant, itinerary planning and air ticket booking support.",
+      heroPrimary: "View Services",
+      heroSecondary: "Request Arrangement",
+      heroNote: "B2B partner for group travel, MICE and travel wholesalers",
+      heroImageAlt: "Tokyo skyline - Japan inbound land operator services",
+      summaryTitle: "Core Position",
+      summaryText: "Japan inbound land operator for overseas travel companies",
+      metric1: "Key service areas",
+      metricGroupsValue: "400-600",
+      metricGroupsLabel: "groups/mo (data through Nov 2025)",
+      metric2: "Agency focused",
+      metric3: "Corporate & group",
+      metric4: "Japan destinations",
+      marketsTitle: "Our Markets",
+      marketsTitleEn: "Our Markets",
+      marketsKeyTitle: "Key Markets",
+      marketsKeyTitleEn: "Key Markets",
+      marketsExpandTitle: "Expanding Markets",
+      marketsExpandTitleEn: "Expanding Markets",
+      marketChina: "China",
+      marketVietnam: "Vietnam",
+      marketMalaysia: "Malaysia",
+      marketSingapore: "Singapore",
+      marketIndonesia: "Indonesia",
+      marketPhilippines: "Philippines",
+      marketsMapAlt: "Osaka hub network map to China and Southeast Asia",
+      marketsMapTitle: "Osaka Hub Network",
+      tag1: "Japan Inbound",
+      tag2: "Inbound Travel",
+      tag3: "Land Operator",
+      tag4: "Group Travel",
+      aboutTitle: "Your trusted local partner in Japan.",
+      aboutText: "We support overseas agencies, wholesalers and MICE clients with reliable local arrangements, clear communication and stable delivery.",
+      about1: "Integrated management for Japan group travel arrangements",
+      about2: "Smooth communication with overseas partners",
+      about3: "Quality, international standards and operational stability",
+      aboutExpoTitle: "Trade Show Participation",
+      aboutExpoLead: "We regularly join travel exhibitions and B2B meetings across Asia to expand partnerships with overseas agencies.",
+      expoCatalogEyebrow: "CATALOG",
+      aboutExpo1Alt: "Team photo at Australia-Japan Tourism Promotion Seminar 2026",
+      aboutExpo1Caption: "Australia–Japan Tourism Promotion Seminar 2026 — team photo",
+      aboutExpo2Alt: "Indonesia Travel Expo 2026 Jakarta exhibition",
+      aboutExpo2Caption: "INDONESIA TRAVEL EXPO 2026 (Jakarta) — exhibition & meetings",
+      expoBack: "← Back to expo list",
+      expoBackNews: "← Back to news",
+      expoUpcomingBadge: "Upcoming",
+      expoViewDetail: "View details →",
+      expoNaganoTitle: "Nagano Prefecture Tourism Promotion Meeting FY2026",
+      expoNaganoDateShort: "Jul 10, 2026",
+      expoNaganoDate: "July 10, 2026",
+      expoNaganoIntro: "Dream Resort Development will join the Reiwa 8 Nagano Prefecture Tourism Promotion Meeting to discuss inbound group travel using Nagano and northern Nagano resources — hot springs, snow viewing and nature experiences — with overseas travel partners.",
+      expoNaganoPoint1: "Group itinerary proposals using Nagano accommodation, transport and attractions",
+      expoNaganoPoint2: "Pre-meeting B2B discussions and brochure requests for overseas agencies",
+      expoJntoTitle: "JNTO \"VISIT JAPAN Travel & MICE Mart 2026\"",
+      expoJntoTitleShort: "JNTO VISIT JAPAN Travel & MICE Mart 2026",
+      expoJntoDateShort: "Sep 24–26",
+      expoJntoDate: "September 24 (Thu) – 26 (Sat), 2026",
+      expoJntoIntro: "We will exhibit at JNTO's VISIT JAPAN Travel & MICE Mart 2026. Consult us on Kanto, Kansai and Golden Route programs, MICE arrangements and travel product development.",
+      expoJntoPoint1: "Comprehensive land-operator proposals for inbound travel and MICE",
+      expoJntoPoint2: "Pre-event meetings and brochure requests welcome",
+      expoMeetingCta: "Request meeting & materials",
+      expoAustraliaIntro: "We joined the Australia–Japan Tourism Promotion Seminar to expand our network with overseas agencies and related organizations, exchanging ideas on co-developing inbound travel products.",
+      expoIndonesiaIntro: "We exhibited at INDONESIA TRAVEL EXPO 2026 in Jakarta, meeting Southeast Asian agencies and buyers to advance Japan inbound proposals and partnerships.",
+      serviceTitle: "One-stop Japan travel arrangements.",
+      serviceLead: "From hotels to itinerary planning, we provide organized local operations for travel companies.",
+      tabHotel: "Hotel",
+      tabBus: "Bus",
+      tabRestaurant: "Restaurant",
+      tabItinerary: "Itinerary",
+      tabAir: "Air Ticket",
+      hotelTitle: "Hotel Arrangement",
+      hotelText: "Accommodation proposals based on area, budget, grade and travel flow for groups, FIT and MICE.",
+      busTitle: "Charter Bus Arrangement",
+      busText: "Airport transfers, intercity movement and sightseeing routes with safety and efficiency in mind.",
+      restaurantTitle: "Restaurant Arrangement",
+      restaurantText: "Group dining, dietary needs and regional character balanced with stable operation.",
+      itineraryTitle: "Itinerary Planning",
+      itineraryText: "Marketable travel products designed around destinations, transfer time, seasonality and target customers.",
+      airTitle: "Air Ticket Booking",
+      airText: "Air ticket support aligned with the overall schedule of Japan inbound travel.",
+      targetTitle: "Target Clients",
+      targetText: "A Japan-side arrangement desk for overseas agencies, wholesalers and MICE clients.",
+      clientTag1: "Travel Agency",
+      clientTag2: "Wholesaler",
+      clientTag3: "MICE",
+      destTitle: "Flexible combinations of key Japan destinations.",
+      destLead: "From the classic Golden Route to regional tours, corporate visits and incentive travel.",
+      destTokyo: "Tokyo",
+      destTokyoSub: "7 Days 5 Nights · 1 Free Day",
+      destTokyoAlt: "Tokyo - Business / Culture / MICE",
+      destKyoto: "Kyoto",
+      destKyotoSub: "Tradition / Premium Experience",
+      destKyotoAlt: "Kyoto - Tradition / Premium Experience",
+      destGoldenRoute: "Golden Route",
+      destGoldenRouteSub: "6D5N · Standard",
+      destGoldenRouteAlt: "Osaka → Tokyo Golden Route Standard",
+      destGoldenRouteUpgrade: "Golden Route",
+      destGoldenRouteUpgradeSub: "6D5N · Upgrade",
+      destGoldenRouteUpgradeAlt: "Osaka → Tokyo Golden Route Upgrade",
+      destGoldenStandardLink: "View Standard Plan",
+      destGoldenUpgradeLink: "View Upgrade Plan",
+      destKansai: "Kansai",
+      destKansaiSub: "6 Days 5 Nights · 1 Free Day",
+      destKansaiAlt: "Kansai - Osaka · Kyoto · Kobe · Nara",
+      destOsaka: "Osaka",
+      destOsakaSub: "Food / Gateway / Group Travel",
+      destOsakaAlt: "Osaka - Food / Gateway / Group Travel",
+      destHokkaido: "Hokkaido",
+      destHokkaidoSub: "Nature / Snow / Incentive",
+      destHokkaidoAlt: "Hokkaido - Nature / Snow / Incentive",
+      destViewItinerary: "View Itinerary →",
+      detailBack: "← Back to Destinations",
+      detailHighlights: "Highlights",
+      detailItineraryTitle: "Detailed Itinerary",
+      detailDurationLabel: "Duration",
+      detailGroupLabel: "Group Size",
+      detailSeasonLabel: "Best Season",
+      detailCta: "Inquire About This Course",
+      detailPosterTitle: "Tour Poster",
+      detailDownloadPoster: "Download Poster",
+      detailMeals: "Meals",
+      detailHotel: "Hotel",
+      detailTransport: "Transport",
+      detailPricingTitle: "Tour Fare (JPY per person)",
+      detailIncludesTitle: "Package Conditions",
+      detailSpotsTitle: "Key Attractions",
+      detailPriceNote: "Prices vary by group size. Reference quotation below.",
+      contactTitle: "Discuss your Japan travel arrangements.",
+      contactLead: "Share your group travel, MICE or product development requirements.",
+      contactTag1: "Hotel",
+      contactTag2: "Charter Bus",
+      contactTag3: "Group Travel",
+      contactTag4: "Travel Arrangement",
+      formCompany: "Company",
+      formName: "Contact Name",
+      formType: "Inquiry Type",
+      formMessage: "Project Outline",
+      formSubmit: "Submit Inquiry",
+      formSubmitting: "Submitting...",
+      formSuccess: "Your inquiry has been received. We will contact you soon.",
+      formError: "Submission failed. Please try again later.",
+      footerCompany: "Dream Resort Development Inc.",
+      footerDesc: "Overseas Travel Agency B2B Land Operator for Japan",
+      footerSeo: "SEO: Japan Inbound / Land Operator / Hotel / Charter Bus",
+      footerLinkCompany: "Company Profile",
+      footerLinkPrivacy: "Privacy Policy",
+      footerLinkTerms: "Travel Terms",
+      footerLinkInquiry: "Contact",
+      footerFacebook: "Facebook",
+      legalBack: "← Back to Home",
+      inquiryFormCta: "Contact via Web Form",
+      footerLinkCompany: "Company Profile",
+      footerLinkPrivacy: "Privacy Policy",
+      footerLinkTerms: "Travel Terms",
+      footerLinkInquiry: "Contact",
+      legalBack: "← Back to Home",
+      inquiryFormCta: "Contact via Web Form"
+    }
+  }
+};
+
+(() => {
+  const { dict } = window.I18N;
+  const $ = (s, root = document) => root.querySelector(s);
+  const $ = (s, root = document) => [...root.querySelectorAll(s)];
+
+  let currentLang = localStorage.getItem("lang") || "ja";
+
+  function htmlLang(lang) {
+    return lang === "zh" ? "zh-CN" : lang;
+  }
+
+  function applyI18n(lang) {
+    $("[data-i18n]").forEach((el) => {
+      const key = el.dataset.i18n;
+      if (dict[lang]?.[key]) el.textContent = dict[lang][key];
+    });
+    document.documentElement.lang = htmlLang(lang);
+  }
+
+  function setLanguage(lang) {
+    if (!dict[lang]) return;
+    currentLang = lang;
+    localStorage.setItem("lang", lang);
+    $(".lang button").forEach((btn) => {
+      const active = btn.dataset.lang === lang;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", String(active));
+    });
+    applyI18n(lang);
+  }
+
+  function initNav() {
+    const navLinks = $("#navLinks");
+    const menuBtn = $("#menuBtn");
+    menuBtn?.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(open));
+    });
+    $("#navLinks a").forEach((a) => {
+      a.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuBtn?.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  $(".lang button").forEach((btn) => {
+    btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+  });
+
+  initNav();
+  setLanguage(currentLang);
+})();
+
+</script>
+</body>
+</html>

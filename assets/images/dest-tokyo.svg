@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 170" fill="none">
+  <rect width="280" height="170" fill="#1a3a5c"/>
+  <circle cx="220" cy="40" r="28" fill="#f59e0b" opacity="0.8"/>
+  <rect x="40" y="90" width="200" height="8" fill="#fff" opacity="0.3"/>
+  <rect x="60" y="70" width="160" height="6" fill="#fff" opacity="0.2"/>
+  <path d="M0 130 Q70 110 140 125 T280 120 L280 170 L0 170 Z" fill="#0b4f9c" opacity="0.6"/>
+  <text x="20" y="155" fill="#fff" font-size="18" font-weight="800" font-family="Inter, sans-serif">Tokyo</text>
+</svg>

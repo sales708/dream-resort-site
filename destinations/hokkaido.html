@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>北海道モデルコース｜ドリームリゾート開発株式会社</title>
+  <meta name="description" content="北海道 5日モデルコース。自然・冰雪・奖励旅游向けの訪日旅行参考行程。" />
+  <link rel="icon" href="../assets/images/logo-icon.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body data-dest="hokkaido">
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html" aria-label="Dream Resort Development">
+        <img class="logo-img" src="../assets/images/logo.png" alt="DREAM RESORT Development Co., Ltd. — Japan Land Operator Since 2009" width="360" height="78" />
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="../index.html#home" data-i18n="navHome">HOME</a>
+        <a href="../index.html#about" data-i18n="navAbout">ABOUT</a>
+        <a href="../index.html#service" data-i18n="navService">SERVICE</a>
+        <a href="../index.html#destinations" data-i18n="navDestinations">DESTINATIONS</a>        <a href="../index.html#contact" data-i18n="navContact">CONTACT</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang" role="group" aria-label="Language switcher">
+          <button type="button" class="active" data-lang="ja" aria-pressed="true">JA</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-primary" href="../index.html#contact" data-i18n="navCta">相談する</a>
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="dest-page-hero">
+      <img id="destHeroImg" src="../assets/images/dest-hokkaido.svg" alt="" width="1200" height="340" />
+      <div class="container">
+        <a class="dest-back" href="../index.html#destinations" data-i18n="detailBack">← 目的地一覧に戻る</a>
+        <h1 id="destTitle">北海道 5日モデルコース</h1>
+        <p id="destSubtitle">Nature / Snow / Incentive</p>
+        <div class="dest-meta">
+          <span id="destDuration"></span>
+          <span id="destGroup"></span>
+          <span id="destSeason"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-poster-section about">
+      <div class="container dest-poster-grid">
+        <figure class="dest-poster-frame">
+          <img id="destPosterImg" src="../assets/images/posters/poster-hokkaido.svg" alt="" width="480" height="680" />
+          <span class="dest-poster-badge" id="destPosterBadge">5 Days</span>
+        </figure>
+        <div class="dest-poster-copy">
+          <div class="eyebrow" data-i18n="detailPosterTitle">行程ポスター</div>
+          <h2 id="destPosterHeadline">北海道インセンティブ 5日</h2>
+          <p id="destPosterTagline" class="lead"></p>
+          <p id="destLead"></p>
+          <h3 data-i18n="detailHighlights">行程のポイント</h3>
+          <ul class="dest-highlights" id="destHighlights"></ul>
+          <div class="dest-actions">
+            <a id="destPosterDownload" class="btn btn-secondary" href="../assets/images/posters/poster-hokkaido.svg" download="hokkaido-poster.svg" data-i18n="detailDownloadPoster">ポスターを保存</a>
+            <a class="btn btn-primary" href="../index.html#contact" data-i18n="detailCta">この行程で相談する</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-itinerary-section">
+      <div class="container">
+        <h2 data-i18n="detailItineraryTitle">モデル行程</h2>
+        <div class="itinerary-cards" id="destTimeline"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong data-i18n="footerCompany">ドリームリゾート開発株式会社</strong><br />
+        <span data-i18n="footerDesc">Overseas Travel Agency B2B Land Operator for Japan</span>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="../company.html" data-i18n="footerLinkCompany">会社案内</a>
+          <a href="../privacy.html" data-i18n="footerLinkPrivacy">個人情報保護ポリシー</a>
+          <a href="../terms.html" data-i18n="footerLinkTerms">旅行業約款</a>
+          <a href="../inquiry.html" data-i18n="footerLinkInquiry">お問い合わせ</a>
+                        </nav>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61591808600500" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span data-i18n="footerFacebook">Facebook</span>
+          </a>
+        </div>
+      </div>
+      <div data-i18n="footerSeo">SEO: 訪日旅行 / インバウンド / ランドオペレーター</div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/destinations-data.js"></script>
+  <script src="../assets/js/destination-detail.js"></script>
+</body>
+</html>

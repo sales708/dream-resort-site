@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 680" fill="none">
+  <rect width="480" height="680" fill="#1c3d5a"/>
+  <rect y="0" width="480" height="280" fill="#fff" opacity="0.92"/>
+  <path d="M0 280 L80 240 L160 260 L240 220 L320 250 L400 230 L480 260 L480 280 Z" fill="#ecf0f1"/>
+  <circle cx="360" cy="100" r="35" fill="#f1c40f" opacity="0.9"/>
+  <path d="M40 420 Q160 380 280 420 T480 400" stroke="#3498db" stroke-width="8" fill="none" opacity="0.5"/>
+  <text x="40" y="80" fill="#132238" font-size="14" font-weight="800" font-family="Inter,sans-serif" opacity="0.7">DREAM RESORT � JAPAN INBOUND</text>
+  <text x="40" y="560" fill="#fff" font-size="38" font-weight="800" font-family="Inter,sans-serif">HOKKAIDO</text>
+  <text x="40" y="600" fill="rgba(255,255,255,0.85)" font-size="18" font-family="Inter,sans-serif">5 Days � Nature / Snow</text>
+  <text x="40" y="630" fill="rgba(255,255,255,0.65)" font-size="13" font-family="Inter,sans-serif">Model Course Poster</text>
+</svg>
