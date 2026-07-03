@@ -343,6 +343,40 @@ section { padding: 92px 0; }
 .home-highlight-markets {
   align-self: stretch;
 }
+.home-highlight-markets {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: transparent;
+}
+.home-highlight-markets::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #f4f8fc url("../images/markets-global-network.png") center / cover no-repeat;
+}
+.home-highlight-markets::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.28);
+}
+.home-highlight-markets > * {
+  position: relative;
+  z-index: 2;
+}
+.home-highlight-markets .hero-markets-title,
+.home-highlight-markets .hero-markets-subtitle,
+.home-highlight-markets .hero-markets-list li {
+  text-shadow: 0 0 14px #fff, 0 0 6px rgba(255, 255, 255, 0.98), 0 1px 4px rgba(255, 255, 255, 0.95);
+}
+.home-highlight-markets .hero-markets-col {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
 .home-highlight-card {
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.72);
@@ -1750,20 +1784,17 @@ window.I18N = {
     ja: [
       "ホテル / バス / レストラン",
       "MICE",
-      "モデルコース",
-      "航空券"
+      "モデルコース"
     ],
     zh: [
       "酒店 / 巴士 / 餐厅",
       "MICE",
-      "参考行程",
-      "机票"
+      "参考行程"
     ],
     en: [
       "Hotel / Bus / Restaurant",
       "MICE",
-      "Model Course",
-      "Air Ticket"
+      "Model Course"
     ]
   },
 
@@ -1813,7 +1844,7 @@ window.I18N = {
       newsContact: "お問い合わせ →",
       eyebrow: "海外旅行会社向け・訪日旅行専門",
       heroTitle: "日本の旅を、正確に、美しく、確実に手配する。",
-      heroLead: "ドリームリゾート開発株式会社は、ホテル・貸切バス・レストラン・行程作成・航空券予約まで一括対応する訪日旅行専門ランドオペレーターです。",
+      heroLead: "ドリームリゾート開発株式会社は、ホテル・貸切バス・レストラン・行程作成まで一括対応する訪日旅行専門ランドオペレーターです。",
       heroPrimary: "サービスを見る",
       heroSecondary: "旅行手配を相談",
       heroNote: "団体旅行・MICE・旅行卸向けのB2Bパートナー",
@@ -1837,7 +1868,15 @@ window.I18N = {
       marketMalaysia: "マレーシア Malaysia",
       marketSingapore: "シンガポール Singapore",
       marketIndonesia: "インドネシア Indonesia",
-      marketPhilippines: "フィリピン Philippines",
+      marketPhilippines: "フィリピン Philippine",
+      marketAustralia: "オーストラリア Australia",
+      marketCanada: "カナダ Canada",
+      marketAmerica: "アメリカ America",
+      marketMexico: "メキシコ Mexico",
+      marketFrance: "フランス France",
+      marketItaly: "イタリア Italy",
+      marketPoland: "ポーランド Poland",
+      marketGermany: "ドイツ Germany",
       marketsMapAlt: "大阪を拠点とした中国・東南アジアへのネットワーク",
       marketsMapTitle: "大阪拠点ネットワーク",
       tag1: "訪日旅行",
@@ -1954,6 +1993,7 @@ window.I18N = {
       formSubmitting: "送信中...",
       formSuccess: "お問い合わせを受け付けました。担当者よりご連絡いたします。",
       formError: "送信に失敗しました。時間をおいて再度お試しください。",
+      formActivation: "初回設定が必要です。sales@dream-resort.net 宛の FormSubmit 確認メール（迷惑メールも確認）で「Activate Form」をクリック後、再度送信してください。",
       footerCompany: "ドリームリゾート開発株式会社",
       footerDesc: "Overseas Travel Agency B2B Land Operator for Japan",
       footerSeo: "SEO: 訪日旅行 / インバウンド / ランドオペレーター / ホテル手配 / 貸切バス",
@@ -2002,7 +2042,7 @@ window.I18N = {
       newsContact: "联系我们 →",
       eyebrow: "面向海外旅行社・日本入境游专业",
       heroTitle: "让日本旅行安排更准确、更高级、更可靠。",
-      heroLead: "梦幻度假开发株式会社是一家面向海外旅行社的日本入境游专业地接运营商，提供酒店、包车、餐厅、行程设计与机票预订的一站式服务。",
+      heroLead: "梦幻度假开发株式会社是一家面向海外旅行社的日本入境游专业地接运营商，提供酒店、包车、餐厅、行程设计的一站式服务。",
       heroPrimary: "查看服务",
       heroSecondary: "咨询旅行安排",
       heroNote: "服务团体旅行、MICE与旅游批发商的B2B伙伴",
@@ -2026,7 +2066,15 @@ window.I18N = {
       marketMalaysia: "马来西亚 Malaysia",
       marketSingapore: "新加坡 Singapore",
       marketIndonesia: "印度尼西亚 Indonesia",
-      marketPhilippines: "菲律宾 Philippines",
+      marketPhilippines: "菲律宾 Philippine",
+      marketAustralia: "澳大利亚 Australia",
+      marketCanada: "加拿大 Canada",
+      marketAmerica: "美国 America",
+      marketMexico: "墨西哥 Mexico",
+      marketFrance: "法国 France",
+      marketItaly: "意大利 Italy",
+      marketPoland: "波兰 Poland",
+      marketGermany: "德国 Germany",
       marketsMapAlt: "以大阪为枢纽连接中国与东南亚的业务网络图",
       marketsMapTitle: "大阪枢纽网络",
       tag1: "访日旅行",
@@ -2143,6 +2191,7 @@ window.I18N = {
       formSubmitting: "提交中...",
       formSuccess: "已收到您的咨询，我们将尽快与您联系。",
       formError: "提交失败，请稍后重试。",
+      formActivation: "首次使用前需激活：请查收 sales@dream-resort.net 邮箱（含垃圾箱）中 FormSubmit 的「Activate Form」邮件并点击链接，然后再提交。",
       footerCompany: "梦幻度假开发株式会社",
       footerDesc: "面向海外旅行社的日本入境游B2B地接运营商",
       footerSeo: "SEO: 访日旅行 / 入境游 / 地接社 / 酒店安排 / 包车巴士",
@@ -2191,7 +2240,7 @@ window.I18N = {
       newsContact: "Contact us →",
       eyebrow: "Japan inbound travel specialist for overseas agencies",
       heroTitle: "Precise, refined and reliable Japan travel operations.",
-      heroLead: "Dream Resort Development Inc. is a Japan inbound land operator offering hotel, charter bus, restaurant, itinerary planning and air ticket booking support.",
+      heroLead: "Dream Resort Development Inc. is a Japan inbound land operator offering hotel, charter bus, restaurant, and itinerary planning support.",
       heroPrimary: "View Services",
       heroSecondary: "Request Arrangement",
       heroNote: "B2B partner for group travel, MICE and travel wholesalers",
@@ -2215,7 +2264,15 @@ window.I18N = {
       marketMalaysia: "Malaysia",
       marketSingapore: "Singapore",
       marketIndonesia: "Indonesia",
-      marketPhilippines: "Philippines",
+      marketPhilippines: "Philippine",
+      marketAustralia: "Australia",
+      marketCanada: "Canada",
+      marketAmerica: "America",
+      marketMexico: "Mexico",
+      marketFrance: "France",
+      marketItaly: "Italy",
+      marketPoland: "Poland",
+      marketGermany: "Germany",
       marketsMapAlt: "Osaka hub network map to China and Southeast Asia",
       marketsMapTitle: "Osaka Hub Network",
       tag1: "Japan Inbound",
@@ -2332,6 +2389,7 @@ window.I18N = {
       formSubmitting: "Submitting...",
       formSuccess: "Your inquiry has been received. We will contact you soon.",
       formError: "Submission failed. Please try again later.",
+      formActivation: "One-time setup required: open the FormSubmit email sent to sales@dream-resort.net (check spam), click Activate Form, then submit again.",
       footerCompany: "Dream Resort Development Inc.",
       footerDesc: "Overseas Travel Agency B2B Land Operator for Japan",
       footerSeo: "SEO: Japan Inbound / Land Operator / Hotel / Charter Bus",
