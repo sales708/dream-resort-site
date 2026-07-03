@@ -1,6 +1,6 @@
 {
-  "ftpHost": "ftp.example.com",
-  "ftpUser": "your-username",
-  "ftpPass": "your-password",
-  "remotePath": "/public_html"
+  "ftpHost": "dr1999.com",
+  "ftpUser": "your-xserver-server-id",
+  "ftpPass": "your-ftp-password",
+  "remotePath": "/dr1999.com/public_html"
 }
