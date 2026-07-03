@@ -153,18 +153,24 @@
         });
 
         const data = await res.json().catch(() => ({}));
-        const ok = res.ok && data.success !== false && data.success !== "false";
+        const success = data.success === true || data.success === "true";
+        const needsActivation = String(data.message || "").toLowerCase().includes("activation");
 
-        if (ok) {
+        if (success) {
           status.textContent = t("formSuccess");
           status.classList.add("success");
           form.reset();
           renderFormOptions(currentLang);
+        } else if (needsActivation) {
+          status.textContent = t("formActivation");
+          status.classList.add("error");
         } else {
           throw new Error(data.message || "submit failed");
         }
-      } catch {
-        status.textContent = t("formError");
+      } catch (err) {
+        status.textContent = err?.message && err.message !== "submit failed"
+          ? err.message
+          : t("formError");
         status.classList.add("error");
       } finally {
         submitBtn.disabled = false;
